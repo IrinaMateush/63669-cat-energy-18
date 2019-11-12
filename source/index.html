@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="#">
       <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
         alt="Кэт энерджи">
     </a>
@@ -31,11 +31,13 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Функциональное питание для котов</h1>
-    <p class="page-main__slogan">Занялся собой? Займись котом!</p>
-    <img class="page-main__foto" src="https://via.placeholder.com/280x270" width="280" height="270" alt="фото корма">
-    <a href="form.html">Подобрать программу</a>
-
+    <section class="first-screen">
+      <h1 class="first-screen__title">Функциональное питание для котов</h1>
+      <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
+      <img class="first-screen__foto" src="https://via.placeholder.com/280x270" width="280" height="270"
+        alt="фото корма">
+      <a href="form.html" class="first-screen__button">Подобрать программу</a>
+    </section>
     <section class="products">
       <ul class="products__list">
         <li class="products__item products__item--slim">
@@ -57,17 +59,17 @@
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="adventages__list">
         <li class="adventages__item advantages__item--healthy">
-          <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          Функциональное питание содержит только полезные питательные вещества.
         </li>
         <li class="adventages__item advantages__item--easy">
-          <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </p>
+          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+
         </li>
         <li class="adventages__item advantages__item--cheap">
-          <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          Замените один-два приема обычной еды на наше функциональное питание.
         </li>
         <li class="adventages__item advantages__item--fast">
-          <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </li>
       </ul>
     </section>
@@ -81,7 +83,7 @@
 
     <section class="partners">
       <p class="partners__invite">приглашаем к сотрудничеству дилеров!</p>
-      <p class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <address class="partners__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </section>
 
     <section class="map">
@@ -91,21 +93,19 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="https://via.placeholder.com/128x34" width="24" height="24" alt="Кэт энерджи">
+          <a href="#"><img src="https://via.placeholder.com/128x34" width="24" height="24" alt="Кэт энерджи"></a>
         </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <a class="copyright__links" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
