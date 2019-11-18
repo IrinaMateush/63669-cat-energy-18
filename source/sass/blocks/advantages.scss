@@ -1,0 +1,16 @@
+.advantages__title {
+  @include title-font();
+}
+
+.adventages__item {
+  @include text-font();
+  padding-bottom: 32px;
+}
+
+.adventages__item:last-child {
+  padding-bottom: 47px;
+}
+
+.advantages {
+  @include wrapper(368px, 320px);
+}

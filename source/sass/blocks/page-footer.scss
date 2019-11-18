@@ -1,0 +1,23 @@
+.copyright__text {
+  @include base-font(16px, 1, $greyish-brown, $base-font);
+}
+
+.page-footer {
+  @include wrapper(326px, 320px, $middle-grey, 20px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.copyright__links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

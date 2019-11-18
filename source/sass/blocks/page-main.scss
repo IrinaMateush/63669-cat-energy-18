@@ -1,0 +1,32 @@
+.first-screen__title {
+  @include base-font(36px, 1, $white);
+}
+
+.first-screen__slogan {
+  @include base-font(14px, 1, $white);
+  text-transform: uppercase;
+}
+
+.first-screen__button {
+  @include green-button;
+}
+
+.page-main__title {
+  @include title-font();
+}
+
+.first-screen__wrapper {
+  @include wrapper(305px, 320px);
+  background: $green url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.first-screen {
+  @include wrapper(481px, 320px, $white, 0);
+  text-align: center;
+}
+
+.first-screen__foto {
+  margin-top: -135px;
+}
