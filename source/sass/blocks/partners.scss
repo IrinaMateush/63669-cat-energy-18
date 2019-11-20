@@ -1,14 +1,14 @@
+.partners {
+  @include wrapper(114px, 320px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .partners__invite {
   @include base-font(16px, 1.25);
 }
 
 .partners__address {
   @include base-font(14px, 1.43, $greyish-brown, $base-font);
-}
-
-.partners {
-  @include wrapper(114px, 320px);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }

@@ -1,7 +1,3 @@
-.site-list__item a {
-  @include base-font(20px, 1, $black, $oswald-font, 500);
-}
-
 .page-header {
   @include wrapper(65px);
   padding-top: 11px;

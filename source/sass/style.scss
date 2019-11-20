@@ -1,43 +1,19 @@
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./global.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/catalog-produts.scss";
+@import "./blocks/copyright.scss";
 @import "./blocks/example.scss";
+@import "./blocks/first-screen.scss";
+@import "./blocks/map.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
 @import "./blocks/partners.scss";
 @import "./blocks/products.scss";
 @import "./blocks/show-more.scss";
-
-@font-face {
-  font-family: "oswald";
-  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "oswald";
-  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-.site-list,
-.products__list,
-.adventages__list,
-.social,
-.catalog-produts__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+@import "./blocks/site-list.scss";
+@import "./blocks/social.scss";

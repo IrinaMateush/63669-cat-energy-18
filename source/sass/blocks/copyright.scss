@@ -1,0 +1,10 @@
+.copyright__text {
+  @include base-font(16px, 1, $greyish-brown, $base-font);
+}
+
+.copyright__links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

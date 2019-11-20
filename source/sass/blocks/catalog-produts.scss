@@ -1,3 +1,13 @@
+.catalog-produts__item {
+  @include wrapper(210px, 320px, $white, 20px);
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+
 .catalog-produts__title {
   @include base-font(16px, 1.25);
   padding-top: 25px;
@@ -10,14 +20,4 @@
 .catalog-produts__button {
   @include green-button;
   padding: 12px 108px;
-}
-
-.catalog-produts__item {
-  @include wrapper(210px, 320px, $white, 20px);
-  border-top: 1px solid $light-gray;
-  border-bottom: 1px solid $light-gray;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-bottom: 25px;
 }

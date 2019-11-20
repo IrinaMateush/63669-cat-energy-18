@@ -1,3 +1,9 @@
+.show-more {
+  @include wrapper(210px, 320px, $white, 20px);
+  border-top: 1px solid $light-gray;
+  text-align: center;
+}
+
 .show-more__action {
   @include base-font (16px, 1.25);
 }
@@ -9,10 +15,4 @@
 .show-more__button {
   @include grey-button;
   padding: 12px 108px;
-}
-
-.show-more {
-  @include wrapper(210px, 320px, $white, 20px);
-  border-top: 1px solid $light-gray;
-  text-align: center;
 }

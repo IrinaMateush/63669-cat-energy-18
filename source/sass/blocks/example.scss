@@ -1,11 +1,11 @@
+.example {
+  @include wrapper(705px, 320px, $middle-grey, 20px);
+}
+
 .example__title {
   @include title-font();
 }
 
 .example__description {
   @include text-font();
-}
-
-.example {
-  @include wrapper(705px, 320px, $middle-grey, 20px);
 }
