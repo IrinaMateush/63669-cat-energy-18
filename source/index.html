@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
@@ -32,8 +33,10 @@
 
   <main class="page-main">
     <section class="first-screen">
-      <h1 class="first-screen__title">Функциональное питание для котов</h1>
-      <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
+      <div class="first-screen__wrapper">
+        <h1 class="first-screen__title">Функциональное питание для котов</h1>
+        <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
+      </div>
       <img class="first-screen__foto" src="https://via.placeholder.com/280x270" width="280" height="270"
         alt="фото корма">
       <a href="form.html" class="first-screen__button">Подобрать программу</a>
@@ -91,28 +94,26 @@
     </section>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <a href="#"><img src="https://via.placeholder.com/128x34" width="24" height="24" alt="Кэт энерджи"></a>
-        </div>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__links" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__logo-academy" src="https://via.placeholder.com/27x34" width="27" height="34"
-              alt="лого академии">
-          </a>
-        </div>
+      <div class="page-footer__logo">
+        <a href="#"><img src="https://via.placeholder.com/128x34" width="128" height="34" alt="Кэт энерджи"></a>
+      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com"></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__links" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+          <img class="copyright__logo-academy" src="https://via.placeholder.com/27x34" width="27" height="34"
+            alt="лого академии">
+        </a>
       </div>
     </footer>
 

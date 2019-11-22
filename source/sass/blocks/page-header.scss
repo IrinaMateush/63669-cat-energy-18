@@ -1,0 +1,7 @@
+.page-header {
+  @include wrapper(65px);
+  padding-top: 11px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $light-gray;
+}

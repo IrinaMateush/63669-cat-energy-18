@@ -1,0 +1,4 @@
+.page-main__title {
+  @include title-font();
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+.products {
+  @include wrapper(606px, 320px, $white, 0);
+}
+
+.products__title {
+  @include base-font(24px, 1.54);
+  text-transform: uppercase;
+}
+
+.products__description {
+  @include text-font();
+}
+
+.products__link {
+  @include base-font(16px);
+  text-transform: uppercase;
+}
+
+.products__item {
+  @include wrapper(266px, 280px, $middle-grey, 20px);
+  margin: 0 auto;
+}

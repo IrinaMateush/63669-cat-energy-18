@@ -1,0 +1,6 @@
+.page-footer {
+  @include wrapper(326px, 320px, $middle-grey, 20px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
