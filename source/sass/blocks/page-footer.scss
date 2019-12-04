@@ -1,6 +1,24 @@
 .page-footer {
-  @include wrapper(326px, 320px, $middle-grey, 20px);
-  display: flex;
-  flex-direction: column;
+  background-color: $middle-grey;
+}
+
+.page-footer__container {
+  @include wrapper(236px, 100%, $middle-grey, 20px);
+  @include flex-col();
   text-align: center;
+  padding-top: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    @include wrapper(150px, 100%, $middle-grey, 30px);
+    @include flex-row();
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    @include wrapper(150px, 100%, $middle-grey, 110px);
+  }
 }
