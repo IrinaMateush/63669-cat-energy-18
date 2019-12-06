@@ -2,3 +2,11 @@
   @include title-font();
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    @include wrapper(61px, 768px, $white, 30px);
+    text-align: left;
+    padding-bottom: 156px;
+  }
+}

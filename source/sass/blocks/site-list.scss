@@ -1,3 +1,36 @@
+.site-list {
+  @include list-style();
+  display: flex;
+}
+
 .site-list__item a {
   @include base-font(20px, 1, $black, $oswald-font, 500);
+  text-transform: uppercase;
+}
+
+.site-list__item:first-child a {
+  padding-left: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .site-list__item a {
+    @include visually-hidden();
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item a {
+    @include base-font(18px, 1.39, $black-brown, $oswald-font, 500);
+    padding-left: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list a {
+    @include base-font(20px, 1.25, $black-brown, $oswald-font, 500);
+  }
+
+  .site-list--index a {
+    @include base-font(20px, 1.25, $white, $oswald-font, 500);
+  }
 }

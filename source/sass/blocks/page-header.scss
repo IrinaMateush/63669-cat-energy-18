@@ -1,7 +1,20 @@
 .page-header {
-  @include wrapper(65px);
+  @include wrapper(65px, 100%, none, 20px);
+  @include flex-row(space-between);
   padding-top: 11px;
-  display: flex;
-  flex-direction: row;
   border-bottom: 1px solid $light-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include wrapper(85px, 100%, none, 30px);
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include wrapper(113px, 1220px, none, 0);
+    padding-top: 53px;
+  }
 }

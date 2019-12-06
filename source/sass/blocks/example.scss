@@ -1,11 +1,48 @@
 .example {
-  @include wrapper(705px, 320px, $middle-grey, 20px);
+  @include wrapper(705px, 100%, $middle-grey, 20px);
 }
 
 .example__title {
   @include title-font();
+  @include wrapper(103px, 100%, $middle-grey, 0);
 }
 
 .example__description {
   @include text-font();
+  @include wrapper(103px, 100%, $middle-grey, 0);
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    @include wrapper(1081px, 100%, $white, 0);
+  }
+
+  .example__description {
+    @include wrapper(507px, 100%, $white, 30px);
+  }
+
+  .example__slider {
+    @include wrapper(462px, 100%, $middle-grey, 0);
+  }
+
+  .example__title {
+    @include wrapper(81px, 100%, $white, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    @include wrapper(679px, 100%, $middle-grey, 0);
+  }
+
+  .example__description {
+    @include wrapper(462px, 430px, $middle-grey, 0);
+    padding-top: 76px;
+    margin-left: 110px;
+  }
+
+  .example__title {
+    @include wrapper(217px, 100%, $white, 110px);
+    padding-top: 90px;
+  }
 }
