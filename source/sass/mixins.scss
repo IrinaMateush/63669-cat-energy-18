@@ -108,7 +108,7 @@
   flex-direction: column;
 }
 
-@mixin psevdo($top: 0px, $right: 0px, $bottom: 0px, $left: 0px) {
+@mixin psevdo($top: 0, $right: 0, $bottom: 0, $left: 0) {
   position: absolute;
   top: $top;
   right: $right;

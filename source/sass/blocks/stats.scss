@@ -1,5 +1,6 @@
 @media (min-width: $desktop-width) {
-  .stats__field, .stats__value {
+  .stats__field,
+  .stats__value {
     @include base-font(16px, 1, $greyish-brown, $base-font);
     font-weight: normal;
     display: inline-block;

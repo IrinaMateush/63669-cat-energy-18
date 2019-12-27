@@ -28,8 +28,10 @@
     justify-content: flex-end;
     width: 565px;
   }
+
   .site-list__item {
     border: none;
+
     &--active {
       position: relative;
 
@@ -45,7 +47,7 @@
     }
   }
 
-  .site-list__item:first-child  {
+  .site-list__item:first-child {
     border: none;
   }
 
@@ -66,15 +68,16 @@
   }
 
   .page-header--index .site-list__item {
-      &::after {
-        bottom: 10px;
-        height: 2px;
-        background: $white;
-      }
-    }
-    .page-header--catalog .site-list__item {
-      &::after {
-        background: $green;
-      }
+    &::after {
+      bottom: 10px;
+      height: 2px;
+      background: $white;
     }
   }
+
+  .page-header--catalog .site-list__item {
+    &::after {
+      background: $green;
+    }
+  }
+}

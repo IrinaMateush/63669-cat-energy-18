@@ -64,10 +64,10 @@
   }
 
   .main-nav--opened .main-nav__wrapper {
-    @include wrapper(199px, 100%, $white, 0px);
+    @include wrapper(199px, 100%, $white, 0);
     position: absolute;
     top: 65px;
-    left: 0px;
+    left: 0;
     z-index: 10;
     text-align: center;
   }

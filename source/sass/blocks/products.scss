@@ -11,8 +11,9 @@
   @include wrapper(266px, 100%, $middle-grey, 20px);
   margin-top: 20px;
   position: relative;
+
   &::before {
-    @include psevdo(24px, 0px, 0px, 22px);
+    @include psevdo(24px, 0, 0, 22px);
     content: "";
     width: 50px;
     height: 50px;
@@ -22,7 +23,7 @@
 }
 
 .products__item--slim::after {
-  @include psevdo(22px, 0px, 0px, 30px);
+  @include psevdo(22px, 0, 0, 30px);
   content: "";
   width: 36px;
   height: 49px;
@@ -30,7 +31,7 @@
 }
 
 .products__item--fat::after {
-  @include psevdo(35px, 0px, 0px, 13px);
+  @include psevdo(35px, 0, 0, 13px);
   content: "";
   width: 67px;
   height: 28px;
@@ -54,8 +55,9 @@
   @include base-font(16px);
   text-transform: uppercase;
   position: relative;
+
   &::after {
-    @include psevdo(7px, 0px, 0px, 95px);
+    @include psevdo(7px, 0, 0, 95px);
     position: absolute;
     content: "";
     width: 25px;
@@ -73,8 +75,9 @@
     @include wrapper(372px, 708px, $middle-grey, 20px);
     margin-bottom: 30px;
     padding-left: 55px;
+
     &::before {
-      @include psevdo(92px, 0px, 0px, 448px);
+      @include psevdo(92px, 0, 0, 448px);
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -83,13 +86,13 @@
   }
 
   .products__item--slim::after {
-    @include psevdo(80px, 0px, 0px, 475px);
+    @include psevdo(80px, 0, 0, 475px);
     width: 141px;
     height: 194px;
   }
 
   .products__item--fat::after {
-    @include psevdo(135px, 0px, 0px, 412px);
+    @include psevdo(135px, 0, 0, 412px);
     width: 268px;
     height: 113px;
   }
@@ -97,8 +100,8 @@
   .products__title {
     @include base-font(36px, 1.03);
     margin-top: 51px;
-    padding-left: 0px;
-    margin-bottom:26px;
+    padding-left: 0;
+    margin-bottom: 26px;
   }
 
   .products__description {
@@ -111,8 +114,9 @@
 
   .products__link {
     @include base-font(20px);
+
     &::after {
-      @include psevdo(10px, 0px, 0px, 130px);
+      @include psevdo(10px, 0, 0, 130px);
     }
   }
 }
@@ -127,8 +131,9 @@
   .products__item {
     @include wrapper(372px, 570px, $middle-grey, 47px);
     margin: 0;
+
     &::before {
-      @include psevdo(47px, 0px, 0px, 52px);
+      @include psevdo(47px, 0, 0, 52px);
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -137,13 +142,13 @@
   }
 
   .products__item--slim::after {
-    @include psevdo(41px, 0px, 0px, 65px);
+    @include psevdo(41px, 0, 0, 65px);
     width: 71px;
     height: 97px;
   }
 
   .products__item--fat::after {
-    @include psevdo(69px, 0px, 0px, 34px);
+    @include psevdo(69px, 0, 0, 34px);
     width: 134px;
     height: 57px;
   }
@@ -161,7 +166,7 @@
 
   .products__link {
     &::after {
-      @include psevdo(7px, 0px, 0px, 130px);
+      @include psevdo(7px, 0, 0, 130px);
     }
   }
 }
