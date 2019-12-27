@@ -1,56 +1,85 @@
 .show-more {
   @include wrapper(210px, 320px, $white, 20px);
+  padding-bottom: 25px;
+  border-bottom: 1px solid $light-gray;
   border-top: 1px solid $light-gray;
-  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  &::before {
+    @include psevdo(27px, 0px, 0px, 145px);
+    content: "";
+    background: url("../../img/icon-plus-mobile.svg") no-repeat center;
+    width: 31px;
+    height: 31px;
+    opacity: 0.2;
+  }
 }
 
 .show-more__action {
-  @include base-font (16px, 1.25);
+  @include base-font(16px, 1.25);
+  padding-top: 83px;
 }
 
 .show-more__description {
-  @include base-font (12px, 1.33, $greyish-brown, $base-font);
-  padding-bottom: 25px;
+  @include base-font(12px, 1.33, $greyish-brown, $base-font);
 }
 
 .show-more__button {
   @include grey-button;
   height: 37px;
+  padding-top: 13px;
+  text-align: center;
   width: 100%;
 }
+
 
 @media (min-width: $tablet-width) {
   .show-more {
     @include wrapper(431px, 324px, $white, 38px);
-    border: 1px solid $green;
     text-align: center;
-    margin-bottom: 140px;
-    box-sizing: border-box;
+    margin: 0 30px 140px 30px;
+    border: 1px solid $light-gray;
+    &::before {
+      @include psevdo(55px, 0px, 0px, 133px);
+      background: url("../../img/icon-plus.svg") no-repeat center;
+      width: 61px;
+      height: 61px;
+    }
   }
 
   .show-more__button {
     @include grey-button;
     height: 37px;
-    padding-top: 13px;
+    padding: 13px 13px 0 13px;
     text-align: center;
     width: 100%;
   }
 
   .show-more__action {
-    @include base-font (20px, 1);
+    @include base-font(20px, 1);
     text-transform: uppercase;
-    padding-top: 136px;
+    padding-top: 166px;
+    max-width: 143px;
+    margin: 0 auto;
   }
 
   .show-more__description {
-    @include base-font (16px, 1.33, $greyish-brown, $base-font);
-    padding-bottom: 85px;
+    @include base-font(16px, 1.33, $greyish-brown, $base-font);
+    max-width: 175px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .show-more {
     @include wrapper(431px, 245px, $white, 38px);
+    margin: 0 0 140px 0;
+    border: 1px solid $light-gray;
+    &::before {
+      @include psevdo(55px, 0px, 0px, 93px);
+    }
   }
 
   .show-more__button {
@@ -59,5 +88,15 @@
     padding-top: 13px;
     text-align: center;
     width: 100%;
+
+  }
+
+  .show-more__action {
+    padding-top: 170px;
+    padding-bottom: 20px;
+  }
+
+  .show-more__description {
+    padding-bottom: 80px;
   }
 }

@@ -3,7 +3,7 @@
 }
 
 .catalog-produts__item {
-  @include wrapper(210px, 320px, $white, 20px);
+  @include wrapper(210px, 320px, $white, 0px);
   @include flex-row();
   border-top: 1px solid $light-gray;
   border-bottom: 1px solid $light-gray;
@@ -12,7 +12,8 @@
 
 .catalog-produts__title {
   @include base-font(16px, 1.25);
-  padding-top: 25px;
+  padding-top: 27px;
+  margin: 0 auto;
 }
 
 .catalog-produts__property {
@@ -22,11 +23,18 @@
 
 .catalog-produts__button {
   @include green-button;
-  height: 37px;
-  padding-top: 13px;
   text-align: center;
   width: 100%;
+  padding: 13px;
+
 }
+
+.catalog-produts__foto--small, .catalog-produts__foto--big {
+  width: 140px;
+  height: 144px;
+  padding-top: 27px;
+}
+
 
 @media (min-width: $tablet-width) {
   .catalog-produts__list {
@@ -40,13 +48,49 @@
     margin-bottom: 140px;
   }
 
+  .catalog-produts__title {
+    @include base-font(20px, 1);
+    padding-top: 35px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+    width: 144px;
+    text-align: center;
+  }
+
   .catalog-produts__property {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .catalog-produts__property p {
+    @include flex-row();
+    @include base-font(16px, 1.5, $greyish-brown, $base-font);
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $very-light-pink;
+    margin: 5px;
+  }
+
+  .catalog-produts__foto--small {
+    padding: 0;
+    width: 245px;
+    height: 174px;
+    margin: -45px auto 0 auto;
+  }
+
+  .catalog-produts__foto--big {
+    width: 245px;
+    height: 208px;
+    margin: -80px auto 0 auto;
+  }
+
+  .catalog-produts__button {
+    text-align: center;
+    width: 250px;
+    padding: 13px;
     margin: 0 auto;
   }
 
-  .catalog-produts__foto {
-    margin: -50px auto 0 auto;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -56,8 +100,18 @@
   }
 
   .catalog-produts__item {
-    @include wrapper(431px, 245px, $middle-grey, 38px);
+    @include wrapper(431px, 245px, $middle-grey, 0px);
     border: none;
     margin: 0 0 140px 0;
+  }
+
+  .catalog-produts__property {
+    margin: 0 auto;
+    width: 169px;
+  }
+
+  .catalog-produts__button {
+    width: 169px;
+    padding-bottom: 0px;
   }
 }

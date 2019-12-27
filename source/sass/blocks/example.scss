@@ -4,45 +4,48 @@
 
 .example__title {
   @include title-font();
-  @include wrapper(103px, 100%, $middle-grey, 0);
+  @include wrapper(10px, 100%, $middle-grey, 0);
+  padding-bottom: 66px;
 }
 
 .example__description {
-  @include text-font();
-  @include wrapper(103px, 100%, $middle-grey, 0);
+  @include wrapper(10px, 100%, $middle-grey, 0);
+  @include base-font(16px, 1.5, $greyish-brown, $base-font);
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    @include wrapper(1081px, 100%, $white, 0);
+    @include wrapper(507px, 100%, $white, 0);
   }
 
   .example__description {
-    @include wrapper(507px, 100%, $white, 30px);
+    @include wrapper(462px, 100%, $white, 30px);
   }
 
   .example__slider {
-    @include wrapper(462px, 100%, $middle-grey, 0);
+    @include wrapper(46px, 100%, $middle-grey, 0);
   }
 
   .example__title {
-    @include wrapper(81px, 100%, $white, 30px);
+    @include wrapper(61px, 100%, $white, 30px);
+    @include base-font(60px, 1);
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    @include wrapper(679px, 100%, $middle-grey, 0);
+    @include wrapper(589px, 100%, $middle-grey, 0);
   }
 
   .example__description {
-    @include wrapper(462px, 430px, $middle-grey, 0);
+    @include wrapper(412px, 430px, $middle-grey, 0);
+    @include base-font(16px, 1.5, $greyish-brown, $base-font);
     padding-top: 76px;
     margin-left: 110px;
   }
 
   .example__title {
-    @include wrapper(217px, 100%, $white, 110px);
-    padding-top: 90px;
+    @include wrapper(60px, 100%, $white, 110px);
   }
 }
+

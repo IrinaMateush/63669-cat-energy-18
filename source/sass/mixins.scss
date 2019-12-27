@@ -55,6 +55,11 @@
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 @mixin list-style() {
@@ -86,7 +91,7 @@
   padding-left: $padding;
   padding-right: $padding;
   width: $width;
-  height: $height;
+  min-height: $height;
   background-color: $bg-color;
   margin: 0 auto;
 }
@@ -101,4 +106,12 @@
 @mixin flex-col() {
   display: flex;
   flex-direction: column;
+}
+
+@mixin psevdo($top: 0px, $right: 0px, $bottom: 0px, $left: 0px) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }

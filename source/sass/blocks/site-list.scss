@@ -1,6 +1,15 @@
 .site-list {
   @include list-style();
-  display: flex;
+}
+
+.site-list__item {
+  border-bottom: 1px solid $light-gray;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid $light-gray;
 }
 
 .site-list__item a {
@@ -12,25 +21,60 @@
   padding-left: 0;
 }
 
-@media (max-width: $tablet-width) {
-  .site-list__item a {
-    @include visually-hidden();
-  }
-}
-
 @media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 565px;
+  }
+  .site-list__item {
+    border: none;
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 0;
+        height: 2px;
+        background: $green;
+      }
+    }
+  }
+
+  .site-list__item:first-child  {
+    border: none;
+  }
+
   .site-list__item a {
-    @include base-font(18px, 1.39, $black-brown, $oswald-font, 500);
-    padding-left: 36px;
+    @include base-font(18px, 1.39, $black-three, $oswald-font, 500);
+    margin-left: 36px;
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list a {
-    @include base-font(20px, 1.25, $black-brown, $oswald-font, 500);
+    @include base-font(20px, 1.25, $black-three, $oswald-font, 500);
   }
 
   .site-list--index a {
     @include base-font(20px, 1.25, $white, $oswald-font, 500);
   }
-}
+
+  .page-header--index .site-list__item {
+      &::after {
+        bottom: 10px;
+        height: 2px;
+        background: $white;
+      }
+    }
+    .page-header--catalog .site-list__item {
+      &::after {
+        background: $green;
+      }
+    }
+  }

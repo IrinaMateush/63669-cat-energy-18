@@ -6,20 +6,23 @@
 
 .first-screen__title {
   @include base-font(36px, 1, $white);
-  padding-top: 30px;
+  padding-top: 25px;
   margin: 0;
 }
 
 .first-screen__slogan {
   @include base-font(14px, 1, $white);
   text-transform: uppercase;
-  padding-top: 19px;
+  padding-top: 10px;
   padding-bottom: 260px;
 }
 
 .first-screen__button {
   @include green-button;
+  @include base-font(14px, 1.29, $white);
   width: 280px;
+  padding: 12px;
+  margin-top: 30px;
 }
 
 .first-screen__cat {
@@ -43,8 +46,9 @@
 
 @media (min-width: $tablet-width) {
   .first-screen {
-    @include wrapper(874px, 100%, none, 120px);
+    @include wrapper(854px, 100%, none, 120px);
     margin: 0;
+    text-align: left;
   }
 
   .first-screen__cat {
@@ -53,11 +57,12 @@
 
   .first-screen__title {
     @include base-font(60px, 1, $black);
-    padding-top: 78px;
+    padding-top: 48px;
   }
 
   .first-screen__slogan {
     @include base-font(20px, 1, $black);
+    padding-bottom: 28px;
   }
 
   .first-screen__foto {
@@ -69,29 +74,42 @@
     margin: auto;
     z-index: -1;
   }
+
+  .first-screen__button {
+    width: 211px;
+    @include base-font(20px, 1, $white);
+    padding: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .first-screen {
     @include wrapper(599px, 100%, none, 0);
     @include flex-row();
-    padding-left: 110px;
+    padding-left: 0px;
     text-align: left;
   }
 
   .first-screen__cat {
-    @include wrapper(711px, 50%, $green, 0);
+    @include wrapper(696px, 50%, $green, 0);
     background: $green url("../../img/index-background-desktop@1x.jpg") no-repeat;
-    margin-top: -114px;
+    max-height: 696px;
+    margin-top: -122px;
     position: relative;
   }
 
   .first-screen__title {
-    padding-top: 78px;
+    padding-top: 100px;
+    padding-left: 193px;
   }
 
   .first-screen__slogan {
-    padding-bottom: 53px;
+    padding-bottom: 33px;
+    padding-left: 193px;
+  }
+
+  .first-screen__button {
+    margin-left: 193px;
   }
 
   .first-screen__wrapper {
@@ -101,7 +119,7 @@
   .first-screen__foto {
     width: 552px;
     height: 499px;
-    top: 0;
-    margin: auto;
+    top: -60px;
+    left: 220px;
   }
 }

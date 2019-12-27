@@ -1,5 +1,6 @@
 .copyright__text {
   @include base-font(16px, 1, $greyish-brown, $base-font);
+  padding-top: 5px;
 }
 
 .copyright__links {
