@@ -22,41 +22,49 @@
   position: relative;
   padding-bottom: 20px;
 
-  &::before {
-    @include psevdo(0, 0, 0, 0);
-    content: "";
-    width: 60px;
-    height: 60px;
+  &:first-child {
+    padding-bottom: 47px;
   }
-}
 
-.advantages__item:last-child {
-  padding-bottom: 47px;
+  &::before {
+    @include pseudo(60px, 60px, 0, 0, 0, 0);
+    background: {
+      color: $green;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
 }
 
 .advantages__item--healthy {
   &::before {
-    background: $green url("../../img/advantage-leaf@1x.png") no-repeat center;
+    background: {
+      image: url("../../img/advantage-leaf@1x.png");
+    }
   }
 }
 
 .advantages__item--easy {
-  z-index: 1;
-
   &::before {
-    background: $green url("../../img/advantage-powder@1x.png") no-repeat center;
+    background: {
+      image: url("../../img/advantage-powder@1x.png");
+    }
   }
 }
 
 .advantages__item--cheap {
   &::before {
-    background: $green url("../../img/advantage-dining@1x.png") no-repeat center;
+    background: {
+      image: url("../../img/advantage-dining@1x.png");
+    }
   }
 }
 
 .advantages__item--fast {
   &::before {
-    background: $green url("../../img/advantage-clock@1x.png") no-repeat center;
+    background: {
+      image: url("../../img/advantage-clock@1x.png");
+    }
   }
 }
 
@@ -79,18 +87,21 @@
     min-width: 40%;
     margin-top: 89px;
     padding: 0 0 120px 0;
+    z-index: 1;
 
     &::before {
-      @include psevdo(-100px, 0, 0, 0);
-      width: 80px;
-      height: 80px;
+      @include pseudo(80px, 80px, -100px, 0, 0, 0);
     }
 
     &::after {
-      @include psevdo(-180px, 0, 0, 100px);
+      @include pseudo(0, 0, -180px, 0, 0, 100px);
       color: $middle-grey;
       font-size: 281px;
       z-index: -1;
+    }
+
+    &:last-child {
+      padding-bottom: 47px;
     }
   }
 
@@ -100,12 +111,7 @@
     padding-bottom: 83px;
   }
 
-  .advantages__item:last-child {
-    padding-bottom: 47px;
-  }
-
   .advantages__item--healthy {
-    z-index: 1;
 
     &::after {
       content: "1";
@@ -113,7 +119,6 @@
   }
 
   .advantages__item--easy {
-    z-index: 1;
 
     &::after {
       content: "2";
@@ -121,7 +126,6 @@
   }
 
   .advantages__item--cheap {
-    z-index: 1;
 
     &::after {
       content: "3";
@@ -129,7 +133,6 @@
   }
 
   .advantages__item--fast {
-    z-index: 1;
 
     &::after {
       content: "4";

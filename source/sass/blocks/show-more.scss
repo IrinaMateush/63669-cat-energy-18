@@ -7,11 +7,12 @@
   position: relative;
 
   &::before {
-    @include psevdo(27px, 0, 0, 145px);
-    content: "";
-    background: url("../../img/icon-plus-mobile.svg") no-repeat center;
-    width: 31px;
-    height: 31px;
+    @include pseudo(31px, 31px, 27px, 0, 0, 145px);
+    background: {
+      image: url("../../img/icon-plus-mobile.svg");
+      repeat: no-repeat;
+      position: center;
+    }
     opacity: 0.2;
   }
 }
@@ -41,10 +42,12 @@
     border: 1px solid $light-gray;
 
     &::before {
-      @include psevdo(55px, 0, 0, 133px);
-      background: url("../../img/icon-plus.svg") no-repeat center;
-      width: 61px;
-      height: 61px;
+      @include pseudo(61px, 61px, 55px, 0, 0, 133px);
+      background: {
+        image: url("../../img/icon-plus.svg");
+        repeat: no-repeat;
+        position: center;
+      }
     }
   }
 
@@ -80,7 +83,7 @@
     border: 1px solid $light-gray;
 
     &::before {
-      @include psevdo(55px, 0, 0, 93px);
+      @include pseudo(0, 0, 55px, 0, 0, 93px);
     }
   }
 

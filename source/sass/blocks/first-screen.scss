@@ -66,11 +66,7 @@
   }
 
   .first-screen__foto {
-    width: 709px;
-    height: 609px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    @include pseudo(709px, 609px, 0, 0, 0, 0);
     margin: auto;
     z-index: -1;
   }
@@ -92,7 +88,11 @@
 
   .first-screen__cat {
     @include wrapper(696px, 50%, $green, 0);
-    background: $green url("../../img/index-background-desktop@1x.jpg") no-repeat;
+    background: {
+      color: $green;
+      image: url("../../img/index-background-desktop@1x.jpg");
+      repeat: no-repeat;
+    }
     max-height: 696px;
     margin-top: -122px;
     position: relative;

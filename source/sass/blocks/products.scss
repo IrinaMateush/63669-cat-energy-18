@@ -13,29 +13,26 @@
   position: relative;
 
   &::before {
-    @include psevdo(24px, 0, 0, 22px);
-    content: "";
-    width: 50px;
-    height: 50px;
+    @include pseudo(50px, 50px, 24px, 0, 0, 22px);
     border-radius: 50%;
     background-color: $green;
   }
 }
 
 .products__item--slim::after {
-  @include psevdo(22px, 0, 0, 30px);
-  content: "";
-  width: 36px;
-  height: 49px;
-  background: url("../../img/icon-cat-slim.svg") no-repeat;
+  @include pseudo(36px, 49px, 22px, 0, 0, 30px);
+  background: {
+    image: url("../../img/icon-cat-slim.svg");
+    repeat: no-repeat;
+  }
 }
 
 .products__item--fat::after {
-  @include psevdo(35px, 0, 0, 13px);
-  content: "";
-  width: 67px;
-  height: 28px;
-  background: url("../../img/icon-cat-pro.svg") no-repeat;
+  @include pseudo(67px, 28px, 35px, 0, 0, 13px);
+  background: {
+    image: url("../../img/icon-cat-pro.svg");
+    repeat: no-repeat;
+  }
 }
 
 .products__title {
@@ -57,12 +54,11 @@
   position: relative;
 
   &::after {
-    @include psevdo(7px, 0, 0, 95px);
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 12px;
-    background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+    @include pseudo(25px, 12px, 7px, 0, 0, 95px);
+    background: {
+      image: url("../../img/icon-right-arrow-long.svg");
+      repeat: no-repeat;
+    }
   }
 }
 
@@ -77,24 +73,18 @@
     padding-left: 55px;
 
     &::before {
-      @include psevdo(92px, 0, 0, 448px);
-      width: 200px;
-      height: 200px;
+      @include pseudo(200px, 200px, 92px, 0, 0, 448px);
       border-radius: 50%;
       background-color: $green;
     }
   }
 
   .products__item--slim::after {
-    @include psevdo(80px, 0, 0, 475px);
-    width: 141px;
-    height: 194px;
+    @include pseudo(141px, 194px, 80px, 0, 0, 475px);
   }
 
   .products__item--fat::after {
-    @include psevdo(135px, 0, 0, 412px);
-    width: 268px;
-    height: 113px;
+    @include pseudo(268px, 113px, 135px, 0, 0, 412px);
   }
 
   .products__title {
@@ -116,7 +106,7 @@
     @include base-font(20px);
 
     &::after {
-      @include psevdo(10px, 0, 0, 130px);
+      @include pseudo(0, 0, 10px, 0, 0, 130px);
     }
   }
 }
@@ -133,24 +123,18 @@
     margin: 0;
 
     &::before {
-      @include psevdo(47px, 0, 0, 52px);
-      width: 100px;
-      height: 100px;
+      @include pseudo(100px, 100px, 47px, 0, 0, 52px);
       border-radius: 50%;
       background-color: $green;
     }
   }
 
   .products__item--slim::after {
-    @include psevdo(41px, 0, 0, 65px);
-    width: 71px;
-    height: 97px;
+    @include pseudo(71px, 97px, 41px, 0, 0, 65px);
   }
 
   .products__item--fat::after {
-    @include psevdo(69px, 0, 0, 34px);
-    width: 134px;
-    height: 57px;
+    @include pseudo(134px, 57px, 69px, 0, 0, 34px);
   }
 
   .products__title {
@@ -166,7 +150,7 @@
 
   .products__link {
     &::after {
-      @include psevdo(7px, 0, 0, 130px);
+      @include pseudo(0, 0, 7px, 0, 0, 130px);
     }
   }
 }

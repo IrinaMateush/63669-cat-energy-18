@@ -108,8 +108,12 @@
   flex-direction: column;
 }
 
-@mixin psevdo($top: 0, $right: 0, $bottom: 0, $left: 0) {
+@mixin pseudo($width, $height, $top, $right, $bottom, $left) {
   position: absolute;
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
   top: $top;
   right: $right;
   bottom: $bottom;
