@@ -1,0 +1,15 @@
+.gift {
+  @include wrapper(289px, 100%, $green, 20px);
+  background: {
+    image: url("../../img/gift-photo-mobile@1x.jpg");
+    repeat: no-repeat;
+    size: 100% 100%;
+    width: 280px;
+    height: 289px;
+  }
+}
+
+.gift__text {
+  @include base-font(16px, 1.25, $white);
+  padding: 150px 60px 0 60px;
+}
