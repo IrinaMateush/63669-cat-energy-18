@@ -10,8 +10,7 @@
 <body>
   <header class="page-header page-header--index">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
-        alt="Кэт энерджи">
+      <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -39,8 +38,7 @@
         <a href="form.html" class="first-screen__button">Подобрать программу</a>
       </div>
       <div class="first-screen__cat"></div>
-      <img class="first-screen__foto" src="../img/index-can-desktop@1x.png" width="280" height="270"
-        alt="фото корма">
+      <img class="first-screen__foto" src="../img/index-can-desktop@1x.png" width="280" height="270" alt="фото корма">
     </section>
     <section class="products">
       <ul class="products__list">
@@ -79,17 +77,39 @@
 
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-        часов в день. </p>
+      <div class="example__description">
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16
+          часов в день. </p>
+        <div class="example__indicators">
+          <p class="example__weight">5 кг<span>снижение<br>веса</span></p>
+          <p class="example__time">60 дней<span>затрачено<br>времени</span></p>
+        </div>
+        <p class="example__cost">Затраты на питание: <span class="example__cost--money">15 000 руб.</span></p>
+      </div>
       <div class="example__slider">
+        <div class="example__cat">
+          <div class="example__big-cat">
+          </div>
+          <div class="example__small-cat">
+          </div>
+        </div>
+        <div class="example__scale">
+          <span class="example__scale-before">Было</span>
+          <div class="example__scale-loader">
+            <div class="example__scale-bar"></div>
+          </div>
+          <span class="example__scale-after">Стало</span>
+        </div>
       </div>
     </section>
 
     <section class="partners">
       <div class="partners__container">
         <p class="partners__invite">приглашаем<br> к сотрудничеству дилеров!</p>
-        <address class="partners__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</address>
+        <address class="partners__address">ул. Большая Конюшенная, д. 19/8 <span
+            class="partners__address--city">Санкт-Петербург</span></address>
       </div>
     </section>
 

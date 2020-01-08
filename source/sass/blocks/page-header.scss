@@ -1,5 +1,5 @@
 .page-header {
-  @include wrapper(65px, 100%, none, 0);
+  @include wrapper(65px, 100%, none, 20px);
   @include flex-row(space-between);
   padding-top: 11px;
   //border-bottom: 1px solid $light-gray;

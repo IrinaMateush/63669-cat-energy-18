@@ -6,12 +6,15 @@
   border-bottom: 1px solid $light-gray;
   padding-top: 24px;
   padding-bottom: 20px;
+
   a {
     @include base-font(20px, 1, $black, $oswald-font, 500);
     text-transform: uppercase;
   }
+
   &:first-child {
     border-top: 1px solid $light-gray;
+
     a {
       padding-left: 0;
     }
@@ -28,11 +31,13 @@
 
   .site-list__item {
     border: none;
+
     a {
       @include base-font(18px, 1.39, $black-three, $oswald-font, 500);
       margin-left: 36px;
       border: none;
     }
+
     &:first-child {
       border: none;
     }

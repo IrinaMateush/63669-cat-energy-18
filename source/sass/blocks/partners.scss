@@ -5,7 +5,7 @@
 .partners__container {
   @include wrapper(114px, 100%, $white, 19px);
   @include flex-row();
-  padding-top: 33px;
+  padding-top: 30px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -15,7 +15,7 @@
   @include base-font(16px, 1.25);
   margin: 0;
   text-transform: uppercase;
-  width: 123px;
+  width: 125px;
 }
 
 .partners__address {
@@ -37,6 +37,12 @@
   .partners__address {
     @include base-font(16px, 1.25, $greyish-brown, $base-font);
     width: 155px;
+    font-style: normal;
+  }
+
+  .partners__address--city {
+    display: block;
+    padding-top: 20px;
   }
 }
 

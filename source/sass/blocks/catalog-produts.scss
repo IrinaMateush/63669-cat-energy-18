@@ -56,11 +56,8 @@
   }
 
   .catalog-produts__property {
-    margin: 0 auto;
     width: 250px;
-  }
 
-  .catalog-produts__property {
     p {
       @include flex-row();
       @include base-font(16px, 1.5, $greyish-brown, $base-font);
@@ -85,9 +82,7 @@
   }
 
   .catalog-produts__button {
-    text-align: center;
     width: 250px;
-    padding: 13px;
     margin: 0 auto;
   }
 }
@@ -95,12 +90,10 @@
 @media (min-width: $desktop-width) {
   .catalog-produts__list {
     @include wrapper(100%, 1220px, $white, 0);
-    @include flex-row();
   }
 
   .catalog-produts__item {
     @include wrapper(431px, 245px, $middle-grey, 0);
-    border: none;
     margin: 0 0 140px 0;
   }
 
