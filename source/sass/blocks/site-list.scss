@@ -41,14 +41,18 @@
     &:first-child {
       border: none;
     }
+  }
 
-    &--active {
-      position: relative;
+  .site-list__item--active {
+    a {
+      border-bottom: 2px solid $green;
+      padding-bottom: 5px;
+    }
+  }
 
-      &::after {
-        @include pseudo(168px, 2px, 60px, 0, 0, 35px);
-        background: $green;
-      }
+  .page-header--catalog .site-list__item--active {
+    a {
+      border-color: $green;
     }
   }
 }
@@ -62,16 +66,16 @@
     @include base-font(20px, 1.25, $white, $oswald-font, 500);
   }
 
-  .page-header--index .site-list__item {
-    &::after {
-      @include pseudo(68px, 2px, 60px, 0, 0, 35px);
-      background: $white;
+  .site-list__item--active {
+    a {
+      border-color: $white;
+      padding-bottom: 5px;
     }
   }
 
-  .page-header--catalog .site-list__item {
-    &::after {
-      background: $green;
+  .page-header--catalog .site-list__item--active {
+    a {
+      border-color: $green;
     }
   }
 }
