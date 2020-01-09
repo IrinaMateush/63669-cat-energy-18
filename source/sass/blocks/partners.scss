@@ -11,6 +11,10 @@
   left: 0;
 }
 
+.partners__container--catalog {
+  background-color: $middle-grey;
+}
+
 .partners__invite {
   @include base-font(16px, 1.25);
   margin: 0;

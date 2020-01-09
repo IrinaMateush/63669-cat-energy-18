@@ -1,15 +1,31 @@
 .gift {
   @include wrapper(289px, 100%, $green, 20px);
+  margin-bottom: 149px;
   background: {
     image: url("../../img/gift-photo-mobile@1x.jpg");
     repeat: no-repeat;
     size: 100% 100%;
     width: 280px;
     height: 289px;
+    position: center;
   }
 }
 
 .gift__text {
   @include base-font(16px, 1.25, $white);
-  padding: 150px 60px 0 60px;
+  padding: 190px 0 0 0;
+  max-width: 160px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    @include pseudo(61px, 56px, 65px, 0, 0, 55px);
+    background: {
+      image: url("../../img/icon-gift.svg");
+      repeat: no-repeat;
+      size: 100% 100%;
+      position: center;
+    }
+  }
 }
