@@ -48,6 +48,10 @@
     display: block;
     padding-top: 20px;
   }
+
+  .partners__container--catalog {
+    background-color: $middle-grey;
+  }
 }
 
 @media (min-width: $desktop-width) {

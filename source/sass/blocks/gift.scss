@@ -12,7 +12,7 @@
 }
 
 .gift__text {
-  @include base-font(16px, 1.25, $white);
+  @include text-font(16px, 1.25, $white);
   padding: 190px 0 0 0;
   max-width: 160px;
   margin: 0 auto;
@@ -26,6 +26,48 @@
       repeat: no-repeat;
       size: 100% 100%;
       position: center;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    @include wrapper(200px, 100%, $green, 20px);
+    margin-top: 69px;
+    margin-bottom: 277px;
+    background: {
+      image: url("../../img/gift-photo-tablet@1x.jpg");
+      height: 200px;
+    }
+  }
+
+  .gift__text {
+    padding: 75px 0 0 424px;
+    max-width: 170px;
+    text-align: left;
+
+    &::after {
+      @include pseudo(61px, 56px, 75px, 0, 0, 91px);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    @include wrapper(289px, 245px, $green, 0);
+    display: inline-block;
+    background: {
+      image: url("../../img/gift-photo-desktop@1x.jpg");
+    }
+  }
+
+  .gift__text {
+    padding: 170px 0 0 43px;
+    max-width: 160px;
+    text-align: left;
+
+    &::after {
+      @include pseudo(61px, 56px, 64px, 0, 0, 71px);
     }
   }
 }
