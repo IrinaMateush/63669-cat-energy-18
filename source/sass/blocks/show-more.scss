@@ -1,31 +1,90 @@
 .show-more {
   @include wrapper(210px, 320px, $white, 20px);
+  padding-bottom: 25px;
+  border-bottom: 1px solid $light-gray;
   border-top: 1px solid $light-gray;
-  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    @include pseudo(31px, 31px, 27px, 0, 0, 145px);
+    background: {
+      image: url("../../img/icon-plus-mobile.svg");
+      repeat: no-repeat;
+      position: center;
+    }
+    opacity: 0.2;
+  }
 }
 
 .show-more__action {
-  @include base-font (16px, 1.25);
+  @include base-font(16px, 1.25);
+  padding-top: 83px;
 }
 
 .show-more__description {
-  @include base-font (12px, 1.33, $greyish-brown, $base-font);
-  padding-bottom: 25px;
+  @include base-font(12px, 1.33, $greyish-brown, $base-font);
 }
 
 .show-more__button {
   @include grey-button;
   height: 37px;
+  padding-top: 13px;
+  text-align: center;
   width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .show-more {
     @include wrapper(431px, 324px, $white, 38px);
-    border: 1px solid $green;
     text-align: center;
-    margin-bottom: 140px;
-    box-sizing: border-box;
+    margin: 0 30px 140px 30px;
+    border: 1px solid $light-gray;
+
+    &::before {
+      @include pseudo(61px, 61px, 55px, 0, 0, 133px);
+      background: {
+        image: url("../../img/icon-plus.svg");
+        repeat: no-repeat;
+        position: center;
+      }
+    }
+  }
+
+  .show-more__button {
+    @include grey-button;
+    height: 37px;
+    padding: 13px 13px 0 13px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .show-more__action {
+    @include base-font(20px, 1);
+    text-transform: uppercase;
+    padding-top: 166px;
+    max-width: 143px;
+    margin: 0 auto;
+  }
+
+  .show-more__description {
+    @include base-font(16px, 1.33, $greyish-brown, $base-font);
+    max-width: 175px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    @include wrapper(431px, 245px, $white, 38px);
+    margin: 0 0 140px 0;
+    border: 1px solid $light-gray;
+
+    &::before {
+      @include pseudo(0, 0, 55px, 0, 0, 93px);
+    }
   }
 
   .show-more__button {
@@ -37,27 +96,11 @@
   }
 
   .show-more__action {
-    @include base-font (20px, 1);
-    text-transform: uppercase;
-    padding-top: 136px;
+    padding-top: 170px;
+    padding-bottom: 20px;
   }
 
   .show-more__description {
-    @include base-font (16px, 1.33, $greyish-brown, $base-font);
-    padding-bottom: 85px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .show-more {
-    @include wrapper(431px, 245px, $white, 38px);
-  }
-
-  .show-more__button {
-    @include grey-button;
-    height: 37px;
-    padding-top: 13px;
-    text-align: center;
-    width: 100%;
+    padding-bottom: 80px;
   }
 }

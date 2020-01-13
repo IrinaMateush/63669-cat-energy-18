@@ -1,36 +1,81 @@
 .site-list {
   @include list-style();
-  display: flex;
 }
 
-.site-list__item a {
-  @include base-font(20px, 1, $black, $oswald-font, 500);
-  text-transform: uppercase;
-}
+.site-list__item {
+  border-bottom: 1px solid $light-gray;
+  padding-top: 24px;
+  padding-bottom: 20px;
 
-.site-list__item:first-child a {
-  padding-left: 0;
-}
+  a {
+    @include base-font(20px, 1, $black, $oswald-font, 500);
+    text-transform: uppercase;
+  }
 
-@media (max-width: $tablet-width) {
-  .site-list__item a {
-    @include visually-hidden();
+  &:first-child {
+    border-top: 1px solid $light-gray;
+
+    a {
+      padding-left: 0;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__item a {
-    @include base-font(18px, 1.39, $black-brown, $oswald-font, 500);
-    padding-left: 36px;
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 565px;
+  }
+
+  .site-list__item {
+    border: none;
+
+    a {
+      @include base-font(18px, 1.39, $black-three, $oswald-font, 500);
+      margin-left: 36px;
+      border: none;
+    }
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .site-list__item--active {
+    a {
+      border-bottom: 2px solid $green;
+      padding-bottom: 5px;
+    }
+  }
+
+  .page-header--catalog .site-list__item--active {
+    a {
+      border-color: $green;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list a {
-    @include base-font(20px, 1.25, $black-brown, $oswald-font, 500);
+    @include base-font(20px, 1.25, $black-three, $oswald-font, 500);
   }
 
   .site-list--index a {
     @include base-font(20px, 1.25, $white, $oswald-font, 500);
+  }
+
+  .site-list__item--active {
+    a {
+      border-color: $white;
+      padding-bottom: 5px;
+    }
+  }
+
+  .page-header--catalog .site-list__item--active {
+    a {
+      border-color: $green;
+    }
   }
 }
