@@ -119,3 +119,30 @@
   bottom: $bottom;
   left: $left;
 }
+
+@mixin line-title {
+  padding: 31px 0;
+  position: relative;
+
+  &::after {
+    @include pseudo(53px, 3px, 45px, 0, 0, 248px);
+    background-color: $green;
+  }
+}
+
+@mixin line-title-tablet {
+  width: 100%;
+  padding-left: 67px;
+  margin: 0;
+  z-index: 0;
+
+  &::after {
+    @include pseudo(100%, 3px, 52px, 0, 0, 0);
+    z-index: -1;
+  }
+
+  span {
+    background-color: $white;
+    padding: 0 37px;
+  }
+}

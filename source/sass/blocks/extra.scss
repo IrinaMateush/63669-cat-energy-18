@@ -5,13 +5,7 @@
 .extra__title {
   @include wrapper(100%, 320px, $white, 20px);
   @include title-font(24px, 1);
-  padding: 31px 0;
-  position: relative;
-
-  &::after {
-    @include pseudo(53px, 3px, 45px, 0, 0, 248px);
-    background-color: $green;
-  }
+  @include line-title();
 }
 
 .extra-produts__list {
@@ -27,7 +21,7 @@
 
   &:first-child {
     border-top: 1px solid $very-light-pink;
-    padding-top: 14px;
+    padding-top: 28px;
   }
 
   p {
@@ -54,7 +48,7 @@
     @include base-font(16px, 1.25, $greyish-brown);
     border-left: 1px solid $very-light-pink;
     border-right: 1px solid $very-light-pink;
-    padding: 28px 30px;
+    padding: 27px 30px 24px 30px;
 
     p {
       display: inline-block;
@@ -76,20 +70,7 @@
 
   .extra__title {
     @include title-font(36px, 1);
-    width: 100%;
-    padding-left: 67px;
-    margin: 0;
-    z-index: 0;
-
-    &::after {
-      @include pseudo(100%, 3px, 52px, 0, 0, 0);
-      z-index: -1;
-    }
-
-    span {
-      background-color: $white;
-      padding: 0 37px;
-    }
+    @include line-title-tablet();
   }
 
   .extra-produts__button {
@@ -99,7 +80,8 @@
 
 @media (min-width: $desktop-width) {
   .extra-produts__list {
-    @include wrapper(566px, 867px, $white, 20px);
+    @include wrapper(566px, 867px, $white, 0);
+    margin-left: 110px;
     display: inline-block;
     margin-top: 75px;
   }
@@ -112,10 +94,12 @@
   }
 
   .extra-produts__item {
-    @include wrapper(71px, 865px, $white, 20px);
+    @include wrapper(71px, 894px, $white, 0);
+    border-left: none;
+    border-right: none;
 
     p {
-      width: 40%;
+      width: 43%;
       text-align: right;
     }
 
@@ -127,5 +111,6 @@
 
   .extra-produts__button {
     width: 245px;
+    margin-left: 48px;
   }
 }

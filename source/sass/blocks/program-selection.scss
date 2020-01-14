@@ -1,0 +1,36 @@
+.program-selection {
+  fieldset {
+    border: none;
+  }
+}
+
+.program-selection__title {
+  @include wrapper(100%, 280px, $white, 20px);
+  @include title-font(24px, 1);
+  @include line-title();
+}
+
+.program-selection__request {
+  @include base-font(14px, 1.29, $black);
+  text-transform: uppercase;
+}
+
+.program-selection__required {
+  @include base-font(14px, 1.14, $greyish-brown);
+}
+
+.program-selection__button {
+  @include green-button;
+  text-align: center;
+  border: none;
+  width: 280px;
+  padding: 13px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection__title {
+    @include title-font(36px, 1);
+    @include line-title-tablet();
+  }
+}
