@@ -101,6 +101,7 @@
   .extra-produts__list {
     @include wrapper(566px, 867px, $white, 20px);
     display: inline-block;
+    margin-top: 75px;
   }
 
   .extra-produts__title {

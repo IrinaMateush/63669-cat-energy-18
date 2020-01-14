@@ -9,6 +9,11 @@
     height: 289px;
     position: center;
   }
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .gift__text {
@@ -39,6 +44,11 @@
       image: url("../../img/gift-photo-tablet@1x.jpg");
       height: 200px;
     }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 
   .gift__text {
@@ -56,15 +66,23 @@
   .gift {
     @include wrapper(289px, 245px, $green, 0);
     display: inline-block;
+    vertical-align: top;
+    margin-top: 75px;
+    margin-left: 80px;
     background: {
       image: url("../../img/gift-photo-desktop@1x.jpg");
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
   .gift__text {
     padding: 170px 0 0 43px;
     max-width: 160px;
-    text-align: left;
+    text-align: center;
 
     &::after {
       @include pseudo(61px, 56px, 64px, 0, 0, 71px);

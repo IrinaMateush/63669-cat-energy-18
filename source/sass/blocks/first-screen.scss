@@ -27,16 +27,21 @@
 
 .first-screen__cat {
   @include wrapper(305px, 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   background: {
     color: $green;
     image: url("../../img/index-background-mobile@1x.jpg");
     repeat: no-repeat;
     size: 100% 100%;
   }
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .first-screen__foto {
@@ -92,14 +97,19 @@
 
   .first-screen__cat {
     @include wrapper(696px, 50%, $green, 0);
+    max-height: 696px;
+    margin-top: -122px;
+    position: relative;
     background: {
       color: $green;
       image: url("../../img/index-background-desktop@1x.jpg");
       repeat: no-repeat;
     }
-    max-height: 696px;
-    margin-top: -122px;
-    position: relative;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .first-screen__title {
