@@ -3,13 +3,25 @@
   text-align: center;
 }
 
+.page-main__title--form {
+  @include wrapper(61px, 100%, $white, 20px);
+  padding-top: 19px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__title {
-    @include wrapper(61px, 768px, $white, 30px);
+    @include wrapper(61px, 100%, $white, 30px);
     @include base-font(60px, 1);
     padding-top: 50px;
     text-align: left;
     padding-bottom: 156px;
+  }
+
+  .page-main__title--form {
+    @include wrapper(61px, 100%, $white, 70px);
+    padding-bottom: 53px;
   }
 }
 

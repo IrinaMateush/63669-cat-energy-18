@@ -7,4 +7,13 @@
   @include flex-row();
   width: 100%;
   text-decoration: none;
+  padding-top: 22px;
+  border-top: 1px solid $light-pink;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__links {
+    padding-top: 0;
+    border-top: none;
+  }
 }

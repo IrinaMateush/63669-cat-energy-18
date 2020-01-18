@@ -9,11 +9,21 @@
   padding-top: 30px;
 }
 
+.page-footer__logo {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $light-pink;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__container {
     @include wrapper(150px, 100%, $middle-grey, 30px);
     @include flex-row();
     padding-top: 60px;
+  }
+
+  .page-footer__logo {
+    padding-bottom: 0;
+    border: none;
   }
 }
 

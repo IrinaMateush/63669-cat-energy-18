@@ -1,4 +1,46 @@
 .social {
-  @include flex-row(center);
+  @include flex-row();
   @include list-style();
+  width: 170px;
+  margin: 0 auto;
+}
+
+.social__link--vkontakte {
+  position: relative;
+
+  &::before {
+    @include pseudo(22px, 12px, 0, 0, 0, 0);
+    background: {
+      image: url("../../img/icon-vk.svg");
+      repeat: no-repeat;
+    }
+  }
+}
+
+.social__item {
+  margin: 21px 20px 38px 20px;
+}
+
+.social__link--instagram {
+  position: relative;
+
+  &::before {
+    @include pseudo(17px, 17px, 0, 0, 0, 0);
+    background: {
+      image: url("../../img/icon-insta.svg");
+      repeat: no-repeat;
+    }
+  }
+}
+
+.social__link--facebook {
+  position: relative;
+
+  &::before {
+    @include pseudo(10px, 19px, 0, 0, 0, 0);
+    background: {
+      image: url("../../img/icon-fb.svg");
+      repeat: no-repeat;
+    }
+  }
 }

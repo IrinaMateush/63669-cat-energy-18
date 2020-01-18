@@ -1,6 +1,7 @@
 .gift {
   @include wrapper(289px, 100%, $green, 20px);
   margin-bottom: 149px;
+  margin-top: 38px;
   background: {
     image: url("../../img/gift-photo-mobile@1x.jpg");
     repeat: no-repeat;
@@ -21,7 +22,7 @@
 .gift__text {
   @include text-font(16px, 1.25, $white);
   padding: 190px 0 0 0;
-  max-width: 160px;
+  max-width: 165px;
   margin: 0 auto;
   text-align: center;
   position: relative;

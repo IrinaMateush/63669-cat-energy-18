@@ -7,31 +7,38 @@
   @include flex-row();
   border-top: 1px solid $light-gray;
   border-bottom: 1px solid $light-gray;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .catalog-produts__title {
   @include base-font(16px, 1.25);
-  padding-top: 27px;
-  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  max-width: 75px;
+  margin: 0;
 }
 
 .catalog-produts__property {
   @include base-font(12px, 1.25, $greyish-brown, $base-font);
-  padding-bottom: 25px;
+  width: 140px;
+
+  p {
+    margin: 0;
+    padding: 1px 0;
+  }
 }
 
 .catalog-produts__button {
   @include green-button;
   text-align: center;
   width: 100%;
-  padding: 13px;
+  padding: 10px;
 }
 
 .catalog-produts__foto {
   width: 140px;
   height: 144px;
-  padding-top: 27px;
 }
 
 @media (min-width: $tablet-width) {

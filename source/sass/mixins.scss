@@ -75,6 +75,16 @@
   text-align: center;
   background-color: $green;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $leaf;
+  }
+
+  &:active {
+    background-color: $leaf;
+    color: rgba($white, 0.3);
+  }
 }
 
 @mixin grey-button {
@@ -84,6 +94,16 @@
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $light-gray;
+  }
+
+  &:active {
+    background-color: $leaf;
+    color: rgba($greyish-brown, 0.3);
+  }
 }
 
 @mixin wrapper($height, $width: 100%, $bg-color: $white, $padding: 20px) {
@@ -118,31 +138,4 @@
   right: $right;
   bottom: $bottom;
   left: $left;
-}
-
-@mixin line-title {
-  padding: 31px 0;
-  position: relative;
-
-  &::after {
-    @include pseudo(53px, 3px, 45px, 0, 0, 248px);
-    background-color: $green;
-  }
-}
-
-@mixin line-title-tablet {
-  width: 100%;
-  padding-left: 67px;
-  margin: 0;
-  z-index: 0;
-
-  &::after {
-    @include pseudo(100%, 3px, 52px, 0, 0, 0);
-    z-index: -1;
-  }
-
-  span {
-    background-color: $white;
-    padding: 0 37px;
-  }
 }

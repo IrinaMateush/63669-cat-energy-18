@@ -5,7 +5,13 @@
 .extra__title {
   @include wrapper(100%, 320px, $white, 20px);
   @include title-font(24px, 1);
-  @include line-title();
+  padding: 23px 0;
+  position: relative;
+
+  &::after {
+    @include pseudo(53px, 3px, 45px, 0, 0, 248px);
+    background-color: $green;
+  }
 }
 
 .extra-produts__list {
@@ -21,7 +27,6 @@
 
   &:first-child {
     border-top: 1px solid $very-light-pink;
-    padding-top: 28px;
   }
 
   p {
@@ -32,13 +37,19 @@
 .extra-produts__title {
   @include base-font(16px, 1, $black-three);
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 14px;
+
+  p {
+    margin: 0;
+  }
 }
 
 .extra-produts__button {
   @include green-button;
   text-align: center;
   width: 293px;
-  padding: 13px;
+  padding: 10px;
   margin: 0 auto;
 }
 
@@ -70,7 +81,20 @@
 
   .extra__title {
     @include title-font(36px, 1);
-    @include line-title-tablet();
+    width: 100%;
+    padding-left: 67px;
+    margin: 0;
+    z-index: 0;
+
+    &::after {
+      @include pseudo(100%, 3px, 52px, 0, 0, 0);
+      z-index: -1;
+    }
+
+    span {
+      background-color: $white;
+      padding: 0 37px;
+    }
   }
 
   .extra-produts__button {
