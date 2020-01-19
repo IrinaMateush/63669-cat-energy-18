@@ -11,6 +11,10 @@
   border-top: 1px solid $light-pink;
 }
 
+.copyright__logo-academy {
+  fill: $dark-gray;
+}
+
 @media (min-width: $tablet-width) {
   .copyright__links {
     padding-top: 0;
