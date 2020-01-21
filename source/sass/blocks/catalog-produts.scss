@@ -58,12 +58,14 @@
     padding-top: 35px;
     padding-bottom: 17px;
     text-transform: uppercase;
-    width: 144px;
+    max-width: 135px;
+    margin: 0 auto;
     text-align: center;
   }
 
   .catalog-produts__property {
     width: 250px;
+    margin: 10px auto;
 
     p {
       @include flex-row();
@@ -105,12 +107,11 @@
   }
 
   .catalog-produts__property {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 169px;
   }
 
   .catalog-produts__button {
     width: 169px;
-    padding-bottom: 0;
   }
 }

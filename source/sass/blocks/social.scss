@@ -44,3 +44,22 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social__link--vkontakte {
+    &::before {
+      @include pseudo(30px, 16px, -15px, 0, 0, 0);
+    }
+  }
+  .social__link--instagram {
+    &::before {
+      @include pseudo(23px, 23px, -17px, 0, 0, 0);
+    }
+  }
+
+  .social__link--facebook {
+    &::before {
+      @include pseudo(14px, 28px, -21px, 0, 0, 0);
+    }
+  }
+}

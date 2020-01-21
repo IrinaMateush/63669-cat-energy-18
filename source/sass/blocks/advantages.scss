@@ -104,11 +104,13 @@
     @include base-font(16px, 1.5, $greyish-brown, $base-font);
     max-width: 245px;
     padding-left: 0;
+    margin-top:10px;
   }
 
   .advantages__title {
     @include base-font(60px, 1);
     padding-bottom: 83px;
+    margin-top: 20px;
   }
 
   .advantages__item {

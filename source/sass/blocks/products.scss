@@ -73,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    @include wrapper(825px, 708px, $white, 0);
+    @include wrapper(800px, 708px, $white, 0);
   }
 
   .products__item {
@@ -98,14 +98,14 @@
 
   .products__title {
     @include base-font(36px, 1.03);
-    margin-top: 51px;
+    margin-top: 71px;
     padding-left: 0;
     margin-bottom: 26px;
   }
 
   .products__description {
     @include base-font(16px, 1.5, $greyish-brown, $base-font);
-    padding-bottom: 61px;
+    padding-bottom: 55px;
     max-width: 371px;
     margin: 0;
     border: none;
@@ -113,9 +113,8 @@
 
   .products__link {
     @include base-font(20px);
-
     &::after {
-      @include pseudo(0, 0, 10px, 0, 0, 130px);
+      @include pseudo(25px, 12px, 10px, 0, 0, 130px);
     }
   }
 }

@@ -25,7 +25,7 @@
   @media (min-resolution: $retina-dppx) {
     background: {
       image: url("../../img/before-mobile@2x.png");
-      size: 311px 232px;
+      //size: 311px 232px;
     }
   }
 }
@@ -37,12 +37,13 @@
 .example__weight,
 .example__time {
   @include base-font(24px, 1, $black);
+  box-sizing: border-box;
   display: inline-block;
   text-transform: uppercase;
   text-align: center;
-  width: 82px;
   height: 40px;
-  padding: 16px 23px 0 23px;
+  width: 126px;
+  padding: 13px 0 43px 0;
   border-radius: 3px;
   border: 1px solid $very-light-pink;
   position: relative;
@@ -52,8 +53,9 @@
     text-transform: none;
     display: block;
     position: absolute;
+    width: 58px;
     top: 47px;
-    left: 25px;
+    left: 22px;
     background-color: $middle-grey;
     padding: 0 10px;
   }
@@ -113,12 +115,13 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    @include wrapper(1281px, 100%, $white, 0);
+    @include wrapper(1210px, 100%, $white, 0);
   }
 
   .example__text {
     @include wrapper(64px, 100%, $white, 30px);
-    padding-bottom: 56px;
+    @include base-font(16px, 1.5, $greyish-brown, $base-font);
+    padding-bottom: 16px;
     padding-top: 60px;
   }
 
@@ -137,6 +140,7 @@
   .example__title {
     @include wrapper(61px, 100%, $white, 30px);
     @include base-font(60px, 1);
+    padding: 0 0 5px 30px;
   }
 
   .example__indicators {
@@ -159,10 +163,30 @@
 
   .example__weight,
   .example__time {
+    @include base-font(30px, 1.23, $black);
+    width: 162px;
+    padding: 13px 0 55px 0;
     span {
+      @include text-font(14px, 1);
       background-color: $white;
     }
   }
+
+.example__weight {
+  span {
+    width: 100px;
+    top: 59px;
+    left: 20px;
+  }
+}
+
+.example__time {
+  span {
+    width: 127px;
+    top: 59px;
+    left: 7px;
+  }
+}
 
   .example__cat {
     font-size: 0;
@@ -172,24 +196,27 @@
   }
 
   .example__big-cat {
-    display: inline-block;
-    width: 305px;
+    width: 300px;
     height: 499px;
+    display: inline-block;
     background: {
       image: url("../../img/before-tablet@1x.png");
       repeat: no-repeat;
-      position: 125px -14px;
-      size: 338px 499px;
+      size: cover;
+      position: -40px -4px;
     }
 
     @media (min-resolution: $retina-dppx) {
+      width: 300px;
+      height: 499px;
       background: {
         image: url("../../img/before-tablet@2x.png");
         repeat: no-repeat;
-        position: 125px -14px;
-        size: 338px 499px;
+        position: -40px -4px;
+        size: cover;
       }
     }
+
   }
 
   .example__small-cat {
@@ -199,23 +226,25 @@
     background: {
       image: url("../../img/after-tablet@1x.png");
       repeat: no-repeat;
-      position: -340px 40%;
-      size: 338px 499px;
+      position: -340px 10px;
+      size: cover;
     }
 
     @media (min-resolution: $retina-dppx) {
+      width: 298px;
+      height: 520px;
       background: {
         image: url("../../img/after-tablet@2x.png");
         repeat: no-repeat;
-        position: -145px 40%;
-        size: 298px 517px;
+        position: -340px 10px;
+        size: cover;
       }
     }
   }
 
   .example__scale {
     @include base-font(20px, 1);
-    padding-top: 369px;
+    padding-top: 359px;
 
     span {
       vertical-align: top;
@@ -258,6 +287,10 @@
     position: absolute;
     top: 13px;
     left: 13px;
+  }
+
+  .example__indicators {
+    margin-bottom: 235px;
   }
 }
 

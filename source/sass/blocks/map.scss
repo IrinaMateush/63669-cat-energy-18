@@ -7,3 +7,10 @@
     pointer-events: none; //отключает скролл, нужно донастроить
   }
 }
+@media (min-width: $tablet-width) {
+  .map {
+    iframe {
+      height: 396px;
+    }
+  }
+}

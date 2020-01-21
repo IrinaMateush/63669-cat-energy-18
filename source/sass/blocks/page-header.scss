@@ -1,6 +1,7 @@
 .page-header {
   @include wrapper(65px, 100%, none, 20px);
   @include flex-row(space-between);
+  border-bottom: 1px solid $light-gray;
 }
 
 .page-header__logo {
@@ -18,12 +19,13 @@
   .page-header {
     @include wrapper(85px, 100%, none, 30px);
     padding-top: 24px;
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include wrapper(113px, 1220px, none, 0);
-    padding-top: 53px;
+    @include wrapper(113px, 100%, none, 0);
+    padding: 53px 110px 0 110px;
   }
 }
