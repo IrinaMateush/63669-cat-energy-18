@@ -5,61 +5,18 @@
   margin: 0 auto;
 }
 
-.social__link--vkontakte {
-  position: relative;
-
-  &::before {
-    @include pseudo(22px, 12px, 0, 0, 0, 0);
-    background: {
-      image: url("../../img/icon-vk.svg");
-      repeat: no-repeat;
-    }
-  }
-}
-
 .social__item {
   margin: 21px 20px 38px 20px;
 }
 
-.social__link--instagram {
-  position: relative;
+.social__link {
+  &:hover,
+  &:focus {
+    stroke: $green;
+  }
 
-  &::before {
-    @include pseudo(17px, 17px, 0, 0, 0, 0);
-    background: {
-      image: url("../../img/icon-insta.svg");
-      repeat: no-repeat;
-    }
+  &:active {
+    stroke: rgba($green, 0.3);
   }
 }
 
-.social__link--facebook {
-  position: relative;
-
-  &::before {
-    @include pseudo(10px, 19px, 0, 0, 0, 0);
-    background: {
-      image: url("../../img/icon-fb.svg");
-      repeat: no-repeat;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .social__link--vkontakte {
-    &::before {
-      @include pseudo(30px, 16px, -15px, 0, 0, 0);
-    }
-  }
-  .social__link--instagram {
-    &::before {
-      @include pseudo(23px, 23px, -17px, 0, 0, 0);
-    }
-  }
-
-  .social__link--facebook {
-    &::before {
-      @include pseudo(14px, 28px, -21px, 0, 0, 0);
-    }
-  }
-}

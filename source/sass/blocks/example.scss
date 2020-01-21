@@ -147,7 +147,7 @@
     display: inline-block;
     min-width: 70%;
     padding-left: 30px;
-    margin-bottom: 255px;
+    margin-bottom: 235px;
   }
 
   .example__cost {
@@ -159,6 +159,12 @@
 
   .example__weight {
     margin-right: 42px;
+
+    span {
+      width: 100px;
+      top: 59px;
+      left: 20px;
+    }
   }
 
   .example__weight,
@@ -166,27 +172,20 @@
     @include base-font(30px, 1.23, $black);
     width: 162px;
     padding: 13px 0 55px 0;
+
     span {
       @include text-font(14px, 1);
       background-color: $white;
     }
   }
 
-.example__weight {
-  span {
-    width: 100px;
-    top: 59px;
-    left: 20px;
+  .example__time {
+    span {
+      width: 127px;
+      top: 59px;
+      left: 7px;
+    }
   }
-}
-
-.example__time {
-  span {
-    width: 127px;
-    top: 59px;
-    left: 7px;
-  }
-}
 
   .example__cat {
     font-size: 0;
@@ -216,7 +215,6 @@
         size: cover;
       }
     }
-
   }
 
   .example__small-cat {
@@ -287,10 +285,6 @@
     position: absolute;
     top: 13px;
     left: 13px;
-  }
-
-  .example__indicators {
-    margin-bottom: 235px;
   }
 }
 

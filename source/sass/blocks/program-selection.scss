@@ -220,6 +220,7 @@
   .program-selection {
     @include wrapper(1900px, 768px, $white, 0);
   }
+
   .program-selection__input {
     @include base-font(20px, 1, $greyish-brown);
   }
@@ -255,7 +256,8 @@
   .program-selection__goal {
     margin-bottom: 76px;
     padding-left: 30px;
-    .program-selection__label{
+
+    .program-selection__label {
       padding-bottom: 10px;
     }
   }
@@ -302,10 +304,10 @@
     }
   }
 
-  .program-selection__owner{
-    .program-selection__block{
-      margin-top:35px;
-      margin-bottom:20px;
+  .program-selection__owner {
+    .program-selection__block {
+      margin-top: 35px;
+      margin-bottom: 20px;
     }
   }
 
