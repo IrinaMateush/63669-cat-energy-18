@@ -20,12 +20,13 @@
   background: {
     image: url("../../img/before-mobile@1x.png");
     repeat: no-repeat;
+    size: 311px 232px;
   }
 
   @media (min-resolution: $retina-dppx) {
     background: {
       image: url("../../img/before-mobile@2x.png");
-      //size: 311px 232px;
+      size: 311px 232px;
     }
   }
 }
