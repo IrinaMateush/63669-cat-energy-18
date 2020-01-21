@@ -216,6 +216,22 @@
   }
 }
 
+.program-selection__owner-group {
+  position: relative;
+}
+
+.program-selection__icon--mail {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+.program-selection__icon--phone {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
 @media (min-width: $tablet-width) {
   .program-selection {
     @include wrapper(1900px, 768px, $white, 0);
