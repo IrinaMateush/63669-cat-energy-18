@@ -7,6 +7,16 @@
   height: 50px;
   cursor: pointer;
   border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed {

@@ -148,18 +148,18 @@
 
   .products__title {
     padding-left: 165px;
-    margin-top: 46px;
+    margin-top: 66px;
   }
 
   .products__description {
-    padding-bottom: 16px;
-    padding-top: 35px;
+    padding-bottom: 36px;
+    padding-top: 45px;
     max-width: 461px;
   }
 
   .products__link {
     &::after {
-      @include pseudo(0, 0, 7px, 0, 0, 130px);
+      @include pseudo(25px, 12px, 7px, 0, 0, 130px);
     }
   }
 }

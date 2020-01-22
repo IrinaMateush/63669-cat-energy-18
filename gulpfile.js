@@ -14,7 +14,10 @@ var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
+const htmlmin = require('gulp-htmlmin');
 var csso = require("gulp-csso");
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -31,6 +34,12 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"));
 });
 
+gulp.task('js', function () {
+  return gulp.src('source/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({
@@ -45,6 +54,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -95,5 +105,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

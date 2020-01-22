@@ -1,5 +1,5 @@
 .show-more {
-  @include wrapper(210px, 320px, $white, 20px);
+  @include wrapper(210px, 320px, $white, 0);
   padding-bottom: 25px;
   border-bottom: 1px solid $light-gray;
   border-top: 1px solid $light-gray;
@@ -20,13 +20,13 @@
 .show-more__action {
   @include base-font(16px, 1.25);
   padding-top: 80px;
-  margin: 0;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
 .show-more__description {
   @include base-font(12px, 1.33, $greyish-brown, $base-font);
-  margin: 0;
+  margin: 0 auto;
   padding-top: 5px;
   padding-bottom: 10px;
 }
@@ -42,7 +42,7 @@
   .show-more {
     @include wrapper(431px, 324px, $white, 38px);
     text-align: center;
-    margin: 0 30px 140px 30px;
+    margin: 0 30px 0 30px;
     border: 1px solid $light-gray;
 
     &::before {
@@ -66,7 +66,7 @@
   .show-more__action {
     @include base-font(20px, 1);
     text-transform: uppercase;
-    padding-top: 166px;
+    padding-top: 176px;
     max-width: 143px;
     margin: 0 auto;
   }
@@ -83,7 +83,7 @@
 @media (min-width: $desktop-width) {
   .show-more {
     @include wrapper(431px, 245px, $white, 38px);
-    margin: 0 0 140px 0;
+    margin: 0;
     border: 1px solid $light-gray;
 
     &::before {

@@ -313,6 +313,10 @@
     @include title-font(36px, 1);
     padding-left: 70px;
 
+    &::after {
+      top: 17px;
+    }
+
     span {
       background-color: $white;
       padding: 0 37px;
@@ -358,17 +362,22 @@
 
 @media (min-width: $desktop-width) {
   .program-selection {
-    @include wrapper(1350px, 100%, $white, 0);
+    @include wrapper(1300px, 100%, $white, 0);
+  }
+
+  .program-selection__profile {
+    padding-bottom: 22px;
   }
 
   .program-selection__block {
     @include flex-row();
     align-items: flex-end;
     margin-left: 113px;
+    margin-right: 113px;
 
     fieldset,
     div {
-      min-width: 45%;
+      min-width: 44%;
     }
   }
 
@@ -396,7 +405,7 @@
     max-width: 100%;
 
     &::after {
-      @include pseudo(100%, 3px, 52px, 0, 0, 0);
+      @include pseudo(100%, 3px, 22px, 0, 0, 0);
       z-index: -1;
     }
 
@@ -405,8 +414,26 @@
     }
   }
 
-  .program-selection__extra-block,
   .program-selection__button {
     margin-left: 113px;
+    width: 568px;
+  }
+
+  .program-selection__extra-block {
+    margin-left: 113px;
+  }
+
+  .program-selection__goal {
+    margin-bottom: 40px;
+
+    .program-selection__label {
+      padding-bottom: 15px;
+    }
+  }
+
+  .program-selection__goal-group {
+    .program-selection__label {
+      padding-left: 56px;
+    }
   }
 }

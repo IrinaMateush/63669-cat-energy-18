@@ -1,5 +1,5 @@
 .example {
-  @include wrapper(775px, 100%, $middle-grey, 20px);
+  @include wrapper(825px, 100%, $middle-grey, 20px);
 }
 
 .example__title {
@@ -313,7 +313,11 @@
     @include wrapper(88px, 430px, $middle-grey, 0);
     @include base-font(16px, 1.5, $greyish-brown, $base-font);
     margin-left: 110px;
-    padding-top: 76px 0 71px 0;
+    padding: 80px 0 36px 0;
+  }
+
+  .example__cat {
+    left: -45px;
   }
 
   .example__title {
@@ -333,11 +337,15 @@
     padding-left: 110px;
     display: block;
     max-width: 430px;
-    padding-top: 56px;
+    padding-top: 12px;
     text-align: left;
   }
 
   .example__cost--money {
     padding-left: 64px;
+  }
+
+  .example__scale {
+    padding-top: 369px;
   }
 }
