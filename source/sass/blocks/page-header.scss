@@ -17,15 +17,16 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include wrapper(85px, 100%, none, 30px);
-    padding-top: 24px;
+    @include wrapper(85px, 100%, none, 15px);
+    padding-top: 20px;
+    padding-right: 29px;
     border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include wrapper(113px, 100%, none, 0);
-    padding: 53px 110px 0 110px;
+    @include wrapper(113px, 1440px, none, 110px);
+    padding-top: 53px;
   }
 }

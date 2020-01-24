@@ -1096,7 +1096,7 @@ body {
     max-width: 430px;
     padding-top: 56px;
     text-align: left; }
-  .example__cost--money {
+  .example__money {
     padding-left: 64px; } }
 
 .extra {
@@ -1139,10 +1139,10 @@ body {
     left: 248px;
     background-color: #68b738; }
 
-.extra-produts__list {
+.extra__produts-list {
   list-style: none; }
 
-.extra-produts__item {
+.extra__produts-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 0;
@@ -1281,7 +1281,7 @@ body {
     width: 620px; } }
 
 @media (min-width: 1440px) {
-  .extra-produts__list {
+  .extra__produts-list {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 0;
@@ -2013,7 +2013,7 @@ body {
     text-decoration: none;
     width: 155px;
     font-style: normal; }
-  .partners__address--city {
+  .partners__city {
     display: block;
     padding-top: 20px; }
   .partners__container--catalog {

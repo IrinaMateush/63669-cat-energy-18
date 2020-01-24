@@ -37,7 +37,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    @include wrapper(150px, 1440px, $middle-grey, 110px);
+  }
   .page-footer__container {
-    @include wrapper(150px, 100%, $middle-grey, 110px);
+    padding-left: 0;
+    padding-right: 0;
   }
 }

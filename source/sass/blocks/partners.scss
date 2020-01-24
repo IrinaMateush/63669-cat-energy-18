@@ -44,7 +44,7 @@
     font-style: normal;
   }
 
-  .partners__address--city {
+  .partners__city {
     display: block;
     padding-top: 20px;
   }
@@ -55,6 +55,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .partners {
+    @include wrapper(0, 1440px, $white, 0);
+  }
+
   .partners__container {
     @include wrapper(201px, 570px, $white, 76px);
     padding-top: 69px;

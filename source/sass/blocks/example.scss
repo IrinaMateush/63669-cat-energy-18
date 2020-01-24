@@ -122,8 +122,7 @@
   .example__text {
     @include wrapper(64px, 100%, $white, 30px);
     @include base-font(16px, 1.5, $greyish-brown, $base-font);
-    padding-bottom: 16px;
-    padding-top: 60px;
+    padding: 60px 30px 22px;
   }
 
   .example__slider {
@@ -191,7 +190,7 @@
   .example__cat {
     font-size: 0;
     position: absolute;
-    top: -200px;
+    top: -189px;
     width: 100%;
   }
 
@@ -203,7 +202,7 @@
       image: url("../../img/before-tablet@1x.png");
       repeat: no-repeat;
       size: cover;
-      position: -40px -4px;
+      position: -33px -5px;
     }
 
     @media (min-resolution: $retina-dppx) {
@@ -212,7 +211,7 @@
       background: {
         image: url("../../img/before-tablet@2x.png");
         repeat: no-repeat;
-        position: -40px -4px;
+        position: -33px -5px;
         size: cover;
       }
     }
@@ -291,7 +290,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    @include wrapper(553px, 100%, $middle-grey, 0);
+    @include wrapper(553px, 1440px, $middle-grey, 0);
   }
 
   .example__description {
@@ -303,7 +302,7 @@
   }
 
   .example__slider {
-    width: 49%;
+    width: 50%;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -341,7 +340,7 @@
     text-align: left;
   }
 
-  .example__cost--money {
+  .example__money {
     padding-left: 64px;
   }
 

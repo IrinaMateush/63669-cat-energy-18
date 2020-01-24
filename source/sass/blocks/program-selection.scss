@@ -362,7 +362,7 @@
 
 @media (min-width: $desktop-width) {
   .program-selection {
-    @include wrapper(1300px, 100%, $white, 0);
+    @include wrapper(1300px, 1440px, $white, 0);
   }
 
   .program-selection__profile {

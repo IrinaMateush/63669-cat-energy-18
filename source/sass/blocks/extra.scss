@@ -14,12 +14,12 @@
   }
 }
 
-.extra-produts__list {
+.extra__produts-list {
   list-style: none;
   padding: 0;
 }
 
-.extra-produts__item {
+.extra__produts-item {
   @include wrapper(128px, 320px, $white, 0);
   @include base-font(14px, 1, $greyish-brown);
   border-bottom: 1px solid $very-light-pink;
@@ -35,7 +35,7 @@
   }
 }
 
-.extra-produts__title {
+.extra__produts-title {
   @include base-font(16px, 1, $black-three);
   text-transform: uppercase;
   margin: 0;
@@ -46,7 +46,7 @@
   }
 }
 
-.extra-produts__button {
+.extra__produts-button {
   @include green-button;
   text-align: center;
   width: 293px;
@@ -55,7 +55,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .extra-produts__item {
+  .extra__produts-item {
     @include wrapper(140px, 708px, $white, 0);
     @include base-font(16px, 1.25, $greyish-brown);
     border-left: 1px solid $very-light-pink;
@@ -73,7 +73,7 @@
     }
   }
 
-  .extra-produts__title {
+  .extra__produts-title {
     @include base-font(20px, 1, $black-three);
     display: inline-block;
     width: 58%;
@@ -98,31 +98,31 @@
     }
   }
 
-  .extra-produts__button {
+  .extra__produts-button {
     width: 620px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra {
-    @include wrapper(542px, 100%, $white, 0);
+    @include wrapper(542px, 1440px, $white, 0);
   }
 
-  .extra-produts__list {
+  .extra__produts-list {
     @include wrapper(66px, 867px, $white, 0);
     margin-left: 110px;
     display: inline-block;
     margin-top: 75px;
   }
 
-  .extra-produts__title {
+  .extra__produts-title {
     @include base-font(20px, 1, $black-three);
     display: inline-block;
     width: 20%;
     padding-bottom: 0;
   }
 
-  .extra-produts__item {
+  .extra__produts-item {
     @include wrapper(71px, 894px, $white, 0);
     border-left: none;
     border-right: none;
@@ -140,12 +140,15 @@
     text-align: left;
   }
 
-  .extra-produts__button {
+  .extra__produts-button {
     width: 245px;
     margin-left: 48px;
   }
 
   .extra__title {
     padding: 60px 0 3px 67px;
+    &::after {
+      @include pseudo(100%, 3px, 80px, 0, 0, 0);
+    }
   }
 }
