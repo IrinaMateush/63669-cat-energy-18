@@ -54,12 +54,12 @@
   }
 
   .gift__text {
-    padding: 75px 0 0 424px;
+    padding: 70px 0 0 305px;
     max-width: 170px;
     text-align: left;
 
     &::after {
-      @include pseudo(61px, 56px, 75px, 0, 0, 91px);
+      @include pseudo(61px, 61px, 65px, 0, 0, -26px);
     }
   }
 }
@@ -70,7 +70,7 @@
     display: inline-block;
     vertical-align: top;
     margin-top: 75px;
-    margin-left: 80px;
+    margin-left: 110px;
     background: {
       image: url("../../img/gift-photo-desktop@1x.jpg");
     }
@@ -81,12 +81,12 @@
   }
 
   .gift__text {
-    padding: 170px 0 0 43px;
+    padding: 185px 0 0 0;
     max-width: 160px;
     text-align: center;
 
     &::after {
-      @include pseudo(61px, 56px, 64px, 0, 0, 71px);
+      @include pseudo(61px, 61px, 64px, 0, 0, 45px);
     }
   }
 }

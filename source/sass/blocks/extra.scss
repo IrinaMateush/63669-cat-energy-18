@@ -1,9 +1,9 @@
 .extra {
-  @include wrapper(642px, 100%, $white, 0);
+  @include wrapper(642px, 100%, $white, 20px);
 }
 
 .extra__title {
-  @include wrapper(100%, 320px, $white, 20px);
+  @include wrapper(100%, 320px, $white, 0);
   @include title-font(24px, 1);
   padding: 23px 0;
   position: relative;
@@ -20,7 +20,7 @@
 }
 
 .extra__produts-item {
-  @include wrapper(128px, 320px, $white, 0);
+  @include wrapper(128px, 280px, $white, 0);
   @include base-font(14px, 1, $greyish-brown);
   border-bottom: 1px solid $very-light-pink;
   padding-bottom: 17px;
@@ -49,7 +49,7 @@
 .extra__produts-button {
   @include green-button;
   text-align: center;
-  width: 293px;
+  width: 260px;
   padding: 10px;
   margin: 0 auto;
 }
@@ -58,18 +58,22 @@
   .extra__produts-item {
     @include wrapper(140px, 708px, $white, 0);
     @include base-font(16px, 1.25, $greyish-brown);
+    @include flex-row ();
+    align-items: center;
+    padding: 12px 37px 0;
     border-left: 1px solid $very-light-pink;
     border-right: 1px solid $very-light-pink;
-    padding: 7px 30px 24px 30px;
 
     p {
       display: inline-block;
       width: 40%;
       text-align: right;
+      margin: 0;
+      padding-top: 5px;
     }
 
     .extra__field {
-      padding-right: 52px;
+      padding-right: 72px;
     }
   }
 
@@ -77,35 +81,37 @@
     @include base-font(20px, 1, $black-three);
     display: inline-block;
     width: 58%;
-    padding-bottom: 26px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .extra__title {
     @include title-font(36px, 1);
     width: 100%;
-    padding: 63px 0 63px 67px;
+    padding: 63px 0 63px 30px;
     margin: 0;
     z-index: 0;
 
     &::after {
-      @include pseudo(100%, 3px, 95px, 0, 0, 0);
+      @include pseudo(100%, 3px, 85px, 0, 0, 0);
       z-index: -1;
     }
 
     span {
       background-color: $white;
-      padding: 0 37px;
+      padding: 0 20px;
     }
   }
 
   .extra__produts-button {
     width: 620px;
+    margin-bottom: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra {
-    @include wrapper(542px, 1440px, $white, 0);
+    @include wrapper(548px, 1440px, $white, 0);
   }
 
   .extra__produts-list {
@@ -120,6 +126,7 @@
     display: inline-block;
     width: 20%;
     padding-bottom: 0;
+    padding-right: 150px;
   }
 
   .extra__produts-item {
@@ -127,11 +134,11 @@
     border-left: none;
     border-right: none;
     margin-bottom: 0;
-    padding: 7px 0 0 4px;
+    padding: 0 0 0 4px;
 
     p {
-      width: 43%;
-      text-align: right;
+      @include flex-row();
+      width: 30%;
     }
   }
 
@@ -141,14 +148,20 @@
   }
 
   .extra__produts-button {
-    width: 245px;
-    margin-left: 48px;
+    width: 220px;
+    margin-bottom: 0;
+    margin-left: 50px;
   }
 
   .extra__title {
     padding: 60px 0 3px 67px;
+
     &::after {
       @include pseudo(100%, 3px, 80px, 0, 0, 0);
+    }
+
+    span {
+      padding: 0 40px;
     }
   }
 }

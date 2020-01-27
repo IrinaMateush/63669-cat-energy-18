@@ -42,6 +42,7 @@
     @include base-font(16px, 1.25, $greyish-brown, $base-font);
     width: 155px;
     font-style: normal;
+    text-align: right;
   }
 
   .partners__city {

@@ -1,5 +1,5 @@
 .show-more {
-  @include wrapper(210px, 320px, $white, 0);
+  @include wrapper(210px, 320px, $white, 20px);
   padding-bottom: 25px;
   border-bottom: 1px solid $light-gray;
   border-top: 1px solid $light-gray;
@@ -100,11 +100,11 @@
   }
 
   .show-more__action {
-    padding-top: 170px;
-    padding-bottom: 20px;
+    padding-top: 160px;
+    padding-bottom: 0;
   }
 
   .show-more__description {
-    padding-bottom: 80px;
+    padding-bottom: 75px;
   }
 }

@@ -96,7 +96,6 @@
   .first-screen {
     @include wrapper(599px, 1440px, none, 0);
     @include flex-row();
-    padding-left: 193px;
     text-align: left;
   }
 
@@ -110,24 +109,28 @@
       image: url("../../img/index-background-desktop@1x.jpg");
       repeat: no-repeat;
       size: cover;
-      position-x: -100px;
     }
 
     @media (min-resolution: $retina-dppx) {
       background: {
         image: url("../../img/index-background-desktop@2x.jpg");
         size: cover;
-        position-x: -100px;
       }
     }
   }
 
   .first-screen__title {
     padding-top: 100px;
+    padding-left: 193px;
   }
 
   .first-screen__slogan {
     padding-bottom: 33px;
+    padding-left: 193px;
+  }
+
+  .first-screen__button {
+    margin-left: 193px;
   }
 
   .first-screen__wrapper {

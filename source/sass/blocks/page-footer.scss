@@ -40,6 +40,7 @@
   .page-footer {
     @include wrapper(150px, 1440px, $middle-grey, 110px);
   }
+
   .page-footer__container {
     padding-left: 0;
     padding-right: 0;

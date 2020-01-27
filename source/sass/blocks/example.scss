@@ -2,6 +2,10 @@
   @include wrapper(825px, 100%, $middle-grey, 20px);
 }
 
+.example__description {
+  @include flex-row();
+}
+
 .example__title {
   @include title-font();
   @include wrapper(10px, 100%, $middle-grey, 0);
@@ -17,6 +21,7 @@
   width: 311px;
   height: 232px;
   margin: 0 auto;
+
   background: {
     image: url("../../img/before-mobile@1x.png");
     repeat: no-repeat;
@@ -33,6 +38,7 @@
 
 .example__indicators {
   @include flex-row();
+  width: 100%;
 }
 
 .example__weight,
@@ -67,6 +73,7 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 16px;
+  width: 100%;
 }
 
 .example__scale {
@@ -126,7 +133,7 @@
   }
 
   .example__slider {
-    @include wrapper(462px, 100%, $middle-grey, 0);
+    @include wrapper(656px, 100%, $middle-grey, 0);
     position: relative;
     z-index: 0;
 
@@ -145,16 +152,18 @@
 
   .example__indicators {
     display: inline-block;
-    min-width: 70%;
+    max-width: 60%;
     padding-left: 30px;
     margin-bottom: 235px;
   }
 
   .example__cost {
-    @include base-font(20px, 1);
+    @include base-font(20px, 1.5);
     display: inline-block;
     max-width: 175px;
     text-align: right;
+    padding-right: 31px;
+    margin-top: 40px;
   }
 
   .example__weight {
@@ -192,26 +201,27 @@
     position: absolute;
     top: -189px;
     width: 100%;
+    left: -15px;
   }
 
   .example__big-cat {
-    width: 300px;
-    height: 499px;
+    width: 330px;
+    height: 510px;
     display: inline-block;
     background: {
       image: url("../../img/before-tablet@1x.png");
       repeat: no-repeat;
       size: cover;
-      position: -33px -5px;
+      position: -23px -2px;
     }
 
     @media (min-resolution: $retina-dppx) {
-      width: 300px;
-      height: 499px;
+      width: 330px;
+      height: 510px;
       background: {
         image: url("../../img/before-tablet@2x.png");
         repeat: no-repeat;
-        position: -33px -5px;
+        position: -23px -2px;
         size: cover;
       }
     }
@@ -224,7 +234,7 @@
     background: {
       image: url("../../img/after-tablet@1x.png");
       repeat: no-repeat;
-      position: -340px 10px;
+      position: -356px 5px;
       size: cover;
     }
 
@@ -234,7 +244,7 @@
       background: {
         image: url("../../img/after-tablet@2x.png");
         repeat: no-repeat;
-        position: -340px 10px;
+        position: -356px 5px;
         size: cover;
       }
     }
@@ -302,10 +312,15 @@
   }
 
   .example__slider {
+    @include wrapper(465px, 100%, $middle-grey, 0);
     width: 50%;
     display: inline-block;
     margin: 0;
     padding: 0;
+
+    &::before {
+      @include pseudo(395px, 100%, 0, 0, 0, 320px);
+    }
   }
 
   .example__text {
@@ -316,7 +331,7 @@
   }
 
   .example__cat {
-    left: -45px;
+    left: -56px;
   }
 
   .example__title {
@@ -325,7 +340,9 @@
   }
 
   .example__indicators {
-    @include wrapper(60px, 100%, $middle-grey, 110px);
+    @include wrapper(60px, 100%, $middle-grey, 0);
+    padding-left: 110px;
+    max-width: 100%;
 
     span {
       background-color: $middle-grey;
@@ -336,8 +353,8 @@
     padding-left: 110px;
     display: block;
     max-width: 430px;
-    padding-top: 12px;
     text-align: left;
+    margin-top: 22px;
   }
 
   .example__money {
@@ -346,5 +363,15 @@
 
   .example__scale {
     padding-top: 369px;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .example__scale-loader {
+    margin: -4px 217px 0 217px;
+
+    &::before {
+      @include pseudo(428px, 6px, 12px, 0, 0, -193px);
+    }
   }
 }

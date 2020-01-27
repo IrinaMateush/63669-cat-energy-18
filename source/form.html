@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="203" height="60" alt="Кэт энерджи">
       </picture>
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -44,9 +46,9 @@
     <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
     <section class="program-selection">
       <form action="https://echo.htmlacademy.ru" method="get">
-        <div class="program-selection__block">
+          <p class="program-selection__request">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <div class="program-selection__block">
           <fieldset class="program-selection__profile">
-            <p class="program-selection__request">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <div class="program-selection__form-group">
               <label class="program-selection__label" for="username">Имя:*</label>
               <input class="program-selection__input" type="text" name="username" id="username" placeholder="Барсик"
@@ -85,13 +87,17 @@
               <label class="program-selection__label" for="mail">E-mail:*</label>
               <input class="program-selection__input" type="email" id="mail" name="mail"
                 placeholder="kuklachev@gmail.com" required="">
-              <svg class="program-selection__icon program-selection__icon--mail" width="18" height="14"><use xlink:href="#icon-mail"></use></svg>
+              <svg class="program-selection__icon program-selection__icon--mail" width="18" height="14">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
             </div>
             <div class="program-selection__owner-group">
               <label class="program-selection__label" for="phone">Телефон:*</label>
               <input class="program-selection__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90"
                 required="">
-              <svg class="program-selection__icon program-selection__icon--phone" width="21" height="21"><use xlink:href="#icon-phone"></use></svg>
+              <svg class="program-selection__icon program-selection__icon--phone" width="21" height="21">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
             </div>
           </div>
         </fieldset>
@@ -111,7 +117,7 @@
             </div>
             <div class="program-selection__extra-group">
               <input class="program-selection__checkbox" type="checkbox" id="water" name="water">
-              <label class="program-selection__label" for="water">Вода</label>
+              <label class="program-selection__label" for="water">Питьевая вода</label>
             </div>
             <div class="program-selection__extra-group">
               <input class="program-selection__checkbox" type="checkbox" id="milk" name="milk">
@@ -140,6 +146,12 @@
     <section class="map">
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ffcaf7a9cafba13b71e3f84398dd213957f0c538b7a53676d6651cf6543797f&amp;source=constructor"></iframe>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="../img/map-desktop.jpg">
+        <source media="(min-width: 768px)" srcset="../img/map-tablet.jpg">
+        <img src="../img/map-mobile.jpg" class="map__image"
+          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </picture>
     </section>
   </main>
 
@@ -151,31 +163,40 @@
         </a>
       </div>
       <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com">
-              <svg class="social__vkontakte" width="22" height="12" alt="вконтакте"><use xlink:href="#icon-vk"></use></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com">
-              <svg class="social__instagram" width="17" height="17" alt="instagram"><use xlink:href="#icon-insta"></use></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com">
-              <svg class="social__facebook" width="10" height="19" alt="facebook"><use xlink:href="#icon-fb"></use></svg>
-            </a>
-          </li>
-        </ul>
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com" aria-label="вконтакте">
+            <svg class="social__vkontakte" width="22" height="12">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.instagram.com" aria-label="instagram">
+            <svg class="social__instagram" width="17" height="17">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com" aria-label="facebook">
+            <svg class="social__facebook" width="10" height="19">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__links" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <svg class="copyright__logo-academy" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
+          <svg class="copyright__logo-academy" width="27" height="34">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/picturefill.min.js" async></script>
 </body>
 
 </html>
