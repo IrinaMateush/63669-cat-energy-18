@@ -5,7 +5,6 @@
 .catalog-produts__item {
   @include wrapper(210px, 320px, $white, 20px);
   @include flex-row();
-  max-height: 210px;
   border-top: 1px solid $light-gray;
   border-bottom: 1px solid $light-gray;
   padding-bottom: 20px;
@@ -47,13 +46,14 @@
   .catalog-produts__list {
     @include wrapper(2150px, 768px, $white, 0);
     @include flex-row();
-    align-content: space-between;
+    flex-wrap: wrap;
   }
 
   .catalog-produts__item {
-    @include wrapper(100%, 324px, $middle-grey, 0);
+    @include wrapper(431px, 324px, $middle-grey, 0);
     border: none;
-    max-height: 430px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 
   .catalog-produts__title {
@@ -101,16 +101,13 @@
 
 @media (min-width: $desktop-width) {
   .catalog-produts__list {
-    @include wrapper(1004px, 1220px, $white, 0);
-    @include flex-row();
-    align-content: space-between;
-    margin-bottom: 15px;
+    @include wrapper(1130px, 1220px, $white, 0);
   }
 
   .catalog-produts__item {
     @include wrapper(431px, 245px, $middle-grey, 0);
-    max-height: 431px;
-    margin: 0;
+    margin-bottom: 71px;
+    margin-top: 71px;
   }
 
   .catalog-produts__property {

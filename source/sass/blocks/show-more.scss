@@ -42,7 +42,8 @@
   .show-more {
     @include wrapper(431px, 324px, $white, 38px);
     text-align: center;
-    margin: 0 30px 0 30px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     border: 1px solid $light-gray;
 
     &::before {
@@ -57,10 +58,9 @@
 
   .show-more__button {
     @include grey-button;
-    height: 37px;
-    padding: 13px 13px 0 13px;
     text-align: center;
     width: 100%;
+    padding: 10px;
   }
 
   .show-more__action {
@@ -83,7 +83,8 @@
 @media (min-width: $desktop-width) {
   .show-more {
     @include wrapper(431px, 245px, $white, 38px);
-    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
     border: 1px solid $light-gray;
 
     &::before {
@@ -93,10 +94,8 @@
 
   .show-more__button {
     @include grey-button;
-    height: 37px;
-    padding-top: 13px;
-    text-align: center;
-    width: 100%;
+    width: 145px;
+    margin: 20px auto;
   }
 
   .show-more__action {
