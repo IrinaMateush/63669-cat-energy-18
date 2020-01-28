@@ -46,6 +46,7 @@
   .catalog-produts__list {
     @include wrapper(2150px, 768px, $white, 0);
     @include flex-row();
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
