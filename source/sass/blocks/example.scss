@@ -151,8 +151,7 @@
   }
 
   .example__indicators {
-    display: inline-block;
-    max-width: 60%;
+    max-width: 367px;
     padding-left: 30px;
     margin-bottom: 235px;
   }
@@ -340,9 +339,10 @@
   }
 
   .example__indicators {
-    @include wrapper(60px, 100%, $middle-grey, 0);
+    box-sizing: border-box;
+    max-width: 477px;
+    margin: 0;
     padding-left: 110px;
-    max-width: 100%;
 
     span {
       background-color: $middle-grey;
