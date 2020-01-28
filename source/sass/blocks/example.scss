@@ -1,5 +1,5 @@
 .example {
-  @include wrapper(825px, 100%, $middle-grey, 20px);
+  @include wrapper(815px, 100%, $middle-grey, 20px);
 }
 
 .example__description {
@@ -9,23 +9,22 @@
 .example__title {
   @include title-font();
   @include wrapper(10px, 100%, $middle-grey, 0);
-  padding: 15px 0 25px 0;
+  padding: 15px 0 23px 0;
 }
 
 .example__text {
   @include wrapper(100%, 100%, $middle-grey, 0);
   @include base-font(14px, 1.29, $greyish-brown, $base-font);
+  padding-right: 2px;
 }
 
 .example__big-cat {
-  width: 311px;
+  width: 100%;
   height: 232px;
-  margin: 0 auto;
-
   background: {
     image: url("../../img/before-mobile@1x.png");
     repeat: no-repeat;
-    size: 311px 232px;
+    position: center top;
   }
 
   @media (min-resolution: $retina-dppx) {
@@ -50,7 +49,7 @@
   text-align: center;
   height: 40px;
   width: 126px;
-  padding: 13px 0 43px 0;
+  padding: 13px 0 39px 0;
   border-radius: 3px;
   border: 1px solid $very-light-pink;
   position: relative;
@@ -61,7 +60,7 @@
     display: block;
     position: absolute;
     width: 58px;
-    top: 47px;
+    top: 45px;
     left: 22px;
     background-color: $middle-grey;
     padding: 0 10px;
@@ -74,12 +73,13 @@
   text-align: center;
   padding-bottom: 16px;
   width: 100%;
+  margin-top: 12px;
 }
 
 .example__scale {
   @include base-font(16px, 1.25);
   text-transform: uppercase;
-  padding-top: 35px;
+  padding-top: 42px;
 
   div {
     display: inline-block;
@@ -87,14 +87,14 @@
 }
 
 .example__scale-loader {
-  width: 84px;
-  height: 14px;
+  width: 85px;
+  height: 12px;
   border-radius: 6px;
   border: 1px solid $very-light-pink;
   box-shadow: 0 2px 5px 0 rgba($black, 0.15);
   background-color: $white;
   position: relative;
-  margin: 0 19px 0 19px;
+  margin: 0 16px 0 16px;
 
   &:hover,
   &:focus {
@@ -108,13 +108,13 @@
 }
 
 .example__scale-bar {
-  width: 35px;
+  width: 37px;
   height: 6px;
   border-radius: 3px;
   background-color: $green;
   position: absolute;
   top: 25%;
-  left: 5px;
+  left: 8px;
 }
 
 .example__slider {

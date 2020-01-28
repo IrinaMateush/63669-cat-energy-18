@@ -8,8 +8,8 @@
 
 .advantages__title {
   @include title-font();
-  margin: 0;
-  padding-bottom: 35px;
+  margin-top: 5px;
+  padding-bottom: 3px;
 }
 
 .advantages__text {
@@ -25,12 +25,12 @@
   padding-bottom: 5px;
 
   &::before {
-    @include pseudo(60px, 60px, 0, 0, 0, 0);
+    @include pseudo(60px, 60px, -3px, 0, 0, 0);
     background: {
       color: $green;
       repeat: no-repeat;
       position: center;
-      size: 60px 60px;
+      size: 49px 48px;
     }
   }
 }

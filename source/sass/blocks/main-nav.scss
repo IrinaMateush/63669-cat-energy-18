@@ -8,6 +8,7 @@
   cursor: pointer;
   border: none;
   outline: none;
+  background-color: $white;
 
   &:hover,
   &:focus {
@@ -79,19 +80,19 @@
     }
   }
 
-  .main-nav--nojs {
-    .main-nav__toggle {
-      display: none;
-    }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 
-    .main-nav--nojs .main-nav__wrapper {
-      position: static;
-      min-height: 0;
-    }
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    width: 320px;
+    margin-left: -20px;
+    text-align: center;
+  }
 
-    .main-nav--nojs .site-list__item {
-      display: block;
-    }
+  .main-nav--nojs .site-list__item {
+    display: block;
   }
 }
 

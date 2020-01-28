@@ -25,6 +25,7 @@
 .partners__address {
   @include base-font(14px, 1.43, $greyish-brown, $base-font);
   width: 138px;
+  font-style: normal;
 }
 
 @media (min-width: $tablet-width) {

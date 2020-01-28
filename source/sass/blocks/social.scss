@@ -1,12 +1,12 @@
 .social {
   @include flex-row();
   @include list-style();
-  width: 170px;
+  width: 130px;
   margin: 0 auto;
 }
 
 .social__item {
-  margin: 21px 20px 15px;
+  margin: 21px 7px 15px 0;
 }
 
 .social__link {
