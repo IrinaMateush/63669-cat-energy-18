@@ -69,7 +69,7 @@
 .program-selection__required {
   @include text-font(14px, 1.14, $greyish-brown);
   text-align: center;
-  margin: 19px 0 0 0 ;
+  margin: 19px 0 0 0;
   width: 320px;
 }
 
@@ -257,7 +257,7 @@
   right: 13px;
 }
 
-.program-selection__comment{
+.program-selection__comment {
   padding: 0 0 0 20px;
   margin-bottom: 23px;
   box-sizing: border-box;
@@ -297,7 +297,6 @@
     padding: 12px 20px;
     width: 631px;
     height: 174px;
-
   }
 
   .program-selection__extra-group {
@@ -416,8 +415,9 @@
         position: 0 0;
       }
     }
+  }
 }
-}
+
 @media (min-width: $desktop-width) {
   .program-selection {
     @include wrapper(1300px, 1440px, $white, 0);
