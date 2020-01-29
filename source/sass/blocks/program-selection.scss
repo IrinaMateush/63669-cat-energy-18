@@ -83,52 +83,64 @@
   outline: none;
 }
 
-.program-selection__checkbox + label::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $very-light-pink;
-  left: -5px;
-  top: 0;
-}
+.program-selection__checkbox[type="checkbox"] {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $very-light-pink;
+    left: -5px;
+    top: 0;
+  }
 
-.program-selection__checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 17px;
-  background-color: $green;
-  top: 7px;
-  left: 0;
-  background: {
-    color: $white;
-    image: url("../../img/icon-tick.svg");
-    repeat: no-repeat;
-    position: 0 0;
+  &:focus::before {
+    border: 1px solid $greyish-brown;
+  }
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 17px;
+    background-color: $green;
+    top: 7px;
+    left: 0;
+    background: {
+      color: $white;
+      image: url("../../img/icon-tick.svg");
+      repeat: no-repeat;
+      position: 0 0;
+    }
   }
 }
 
-.program-selection__radio + label::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $very-light-pink;
-  left: -5px;
-  top: 0;
-  border-radius: 50%;
-}
+.program-selection__radio[type="radio"] {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $very-light-pink;
+    left: -5px;
+    top: 0;
+    border-radius: 50%;
+  }
 
-.program-selection__radio:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  top: 10px;
-  left: 5px;
-  background-color: $green;
-  border-radius: 50%;
+  &:focus::before {
+    border: 1px solid $greyish-brown;
+  }
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 5px;
+    background-color: $green;
+    border-radius: 50%;
+  }
 }
 
 .program-selection__goal-group,
