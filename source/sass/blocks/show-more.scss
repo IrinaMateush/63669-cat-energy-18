@@ -7,7 +7,7 @@
   position: relative;
 
   &::before {
-    @include pseudo(31px, 31px, 27px, 0, 0, 145px);
+    @include pseudo(31px, 31px, 20px, 0, 0, 145px);
     background: {
       image: url("../../img/icon-plus-mobile.svg");
       repeat: no-repeat;
@@ -19,7 +19,8 @@
 
 .show-more__action {
   @include base-font(16px, 1.25);
-  padding-top: 80px;
+  text-decoration: none;
+  padding-top: 75px;
   margin: 0 auto;
   text-transform: uppercase;
 }
@@ -27,7 +28,7 @@
 .show-more__description {
   @include base-font(12px, 1.33, $greyish-brown, $base-font);
   margin: 0 auto;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-bottom: 10px;
 }
 
@@ -83,8 +84,7 @@
 @media (min-width: $desktop-width) {
   .show-more {
     @include wrapper(431px, 245px, $white, 38px);
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin: 40px auto;
     border: 1px solid $light-gray;
 
     &::before {

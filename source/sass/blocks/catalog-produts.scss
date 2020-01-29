@@ -12,8 +12,8 @@
 
 .catalog-produts__title {
   @include base-font(16px, 1.25);
-  padding-top: 25px;
-  padding-bottom: 15px;
+  padding-top: 23px;
+  padding-bottom: 12px;
   text-transform: uppercase;
   max-width: 75px;
   margin: 0;
@@ -53,13 +53,12 @@
   .catalog-produts__item {
     @include wrapper(431px, 324px, $middle-grey, 0);
     border: none;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin: 69px auto;
   }
 
   .catalog-produts__title {
     @include base-font(20px, 1);
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 17px;
     text-transform: uppercase;
     max-width: 135px;
@@ -102,13 +101,13 @@
 
 @media (min-width: $desktop-width) {
   .catalog-produts__list {
-    @include wrapper(1130px, 1220px, $white, 0);
+    @include wrapper(1130px, 1440px, $white, 111px);
   }
 
   .catalog-produts__item {
     @include wrapper(431px, 245px, $middle-grey, 0);
-    margin-bottom: 71px;
-    margin-top: 71px;
+
+    margin: 40px auto;
   }
 
   .catalog-produts__property {

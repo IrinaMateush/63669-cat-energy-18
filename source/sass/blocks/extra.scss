@@ -3,10 +3,10 @@
 }
 
 .extra__title {
-  @include wrapper(100%, 320px, $white, 0);
   @include title-font(24px, 1);
-  padding: 23px 0;
+  padding: 23px 0 20px 0;
   position: relative;
+  margin: 0;
 
   &::after {
     @include pseudo(53px, 3px, 35px, 0, 0, 248px);
@@ -39,7 +39,7 @@
   @include base-font(16px, 1, $black-three);
   text-transform: uppercase;
   margin: 0;
-  padding-top: 14px;
+  padding-top: 9px;
 
   p {
     margin: 0;
@@ -88,12 +88,13 @@
   .extra__title {
     @include title-font(36px, 1);
     width: 100%;
-    padding: 63px 0 63px 30px;
+    padding: 0 0 63px 30px;
     margin: 0;
+    margin-top: -5px;
     z-index: 0;
 
     &::after {
-      @include pseudo(100%, 3px, 85px, 0, 0, 0);
+      @include pseudo(100%, 3px, 23px, 0, 0, 0);
       z-index: -1;
     }
 
@@ -111,7 +112,7 @@
 
 @media (min-width: $desktop-width) {
   .extra {
-    @include wrapper(548px, 1440px, $white, 0);
+    @include wrapper(488px, 1440px, $white, 0);
   }
 
   .extra__produts-list {
@@ -154,10 +155,10 @@
   }
 
   .extra__title {
-    padding: 60px 0 3px 67px;
+    padding: 0 0 3px 67px;
 
     &::after {
-      @include pseudo(100%, 3px, 80px, 0, 0, 0);
+      @include pseudo(100%, 3px, 20px, 0, 0, 0);
     }
 
     span {

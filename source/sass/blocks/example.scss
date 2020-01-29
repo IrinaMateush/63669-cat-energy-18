@@ -200,27 +200,27 @@
     position: absolute;
     top: -189px;
     width: 100%;
-    left: -15px;
+    left: -10px;
   }
 
   .example__big-cat {
-    width: 330px;
+    width: 320px;
     height: 510px;
     display: inline-block;
     background: {
       image: url("../../img/before-tablet@1x.png");
       repeat: no-repeat;
       size: cover;
-      position: -23px -2px;
+      position: -20px 8px;
     }
 
     @media (min-resolution: $retina-dppx) {
-      width: 330px;
+      width: 320px;
       height: 510px;
       background: {
         image: url("../../img/before-tablet@2x.png");
         repeat: no-repeat;
-        position: -23px -2px;
+        position: -20px 8px;
         size: cover;
       }
     }
@@ -233,7 +233,7 @@
     background: {
       image: url("../../img/after-tablet@1x.png");
       repeat: no-repeat;
-      position: -356px 5px;
+      position: -346px 5px;
       size: cover;
     }
 
@@ -243,7 +243,7 @@
       background: {
         image: url("../../img/after-tablet@2x.png");
         repeat: no-repeat;
-        position: -356px 5px;
+        position: -346px 5px;
         size: cover;
       }
     }
