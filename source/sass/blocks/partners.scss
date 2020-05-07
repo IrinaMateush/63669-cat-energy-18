@@ -31,7 +31,7 @@
 @media (min-width: $tablet-width) {
   .partners__container {
     @include wrapper(201px, 100%, $white, 71px);
-    padding-top: 59px;
+    padding-top: 63px;
   }
 
   .partners__invite {
