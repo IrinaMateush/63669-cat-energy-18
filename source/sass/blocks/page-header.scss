@@ -33,4 +33,8 @@
     @include wrapper(113px, 1440px, none, 110px);
     padding-top: 53px;
   }
+
+  .page-header__logo {
+    padding: 0;
+  }
 }

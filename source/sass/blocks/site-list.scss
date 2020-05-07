@@ -66,6 +66,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__item {
+    padding-top: 20px;
+
+    a {
+      margin-left: 34px;
+    }
+  }
+
   .site-list a {
     @include base-font(20px, 1.25, $black-three, $oswald-font, 500);
   }

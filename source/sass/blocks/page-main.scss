@@ -36,7 +36,7 @@
   }
 
   .page-main__title--form {
-    @include wrapper(61px, 1440px, $white, 113px);
-    padding-bottom: 48px;
+    @include wrapper(61px, 1440px, $white, 110px);
+    padding-bottom: 56px;
   }
 }

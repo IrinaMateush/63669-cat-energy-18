@@ -381,7 +381,7 @@
     margin-bottom: 5px;
 
     .program-selection__label {
-      padding: 0px 0 11px 66px;
+      padding: 0 0 11px 66px;
       margin-bottom: 23px;
     }
   }
@@ -402,7 +402,7 @@
 
   .program-selection__label {
     @include base-font(20px, 1, $black);
-    padding-top: 18px;
+    padding-top: 16px;
     padding-bottom: 35px;
   }
 
@@ -470,16 +470,36 @@
 .program-selection__comment {
   padding-left: 0;
 
-  .program-selection__title{
+  .program-selection__title {
     margin-left: 0;
   }
 }
 
-//десктоп
-
 @media (min-width: $desktop-width) {
   .program-selection {
     @include wrapper(1300px, 1440px, $white, 0);
+  }
+
+  .program-selection__radio[type="radio"] {
+    &::before {
+      left: -4px;
+    }
+
+    &:checked::after {
+      left: 7px;
+    }
+  }
+
+  .program-selection__checkbox[type="checkbox"] {
+    &::before {
+      left: -2px;
+      top: 27px;
+    }
+
+    &:checked::after {
+      top: 38px;
+      left: 8px;
+    }
   }
 
   .program-selection__block {
@@ -489,8 +509,14 @@
     margin-right: 113px;
   }
 
+  .program-selection__form-group {
+    .program-selection__input {
+      padding: 8px 18px 13px;
+    }
+  }
+
   .program-selection__profile {
-    padding: 0 0 55px 0;
+    padding: 0 0 53px 0;
     margin: 0;
     max-width: 47%;
   }
@@ -498,11 +524,13 @@
   .program-selection__goal {
     box-sizing: border-box;
     margin: 0 0 40px 0;
+    padding: 33px 0 0 33px;
     min-width: 570px;
 
     .program-selection__label {
       padding-bottom: 15px;
       padding-left: 56px;
+      margin-bottom: 18px;
     }
   }
 
@@ -515,7 +543,7 @@
   .program-selection__textarea {
     width: 1220px;
     height: 174px;
-    margin-left: 113px;
+    margin-left: 110px;
   }
 
   .program-selection__extra-group {
@@ -524,6 +552,10 @@
   }
 
   .program-selection__extra {
+    .program-selection__label {
+      padding: 35px 0 0 55px;
+    }
+
     .program-selection__extra-block {
       margin: 31px 0 0 113px;
       max-width: 90%;
@@ -547,7 +579,7 @@
   }
 
   .program-selection__button {
-    margin: -6px -10px 0 125px;
+    margin: 0 -10px 0 111px;
     width: 568px;
   }
 
@@ -556,21 +588,35 @@
   }
 
   .program-selection__request {
-    padding-left: 113px;
+    padding-left: 110px;
+    padding-bottom: 65px;
   }
 
   .program-selection__owner {
-    margin-top: 20px;
+    padding-bottom: 20px;
 
     .program-selection__block {
       max-width: 1440px;
       padding: 0;
-      margin-top: 45px;
+      margin-top: 75px;
       margin-bottom: 28px;
     }
 
     .program-selection__owner-group {
       width: 47%;
     }
+  }
+
+  .program-selection__icon--mail {
+    top: 18px;
+    right: 25px;
+  }
+
+  .program-selection__comment {
+    padding-bottom: 5px;
+  }
+
+  .program-selection__required {
+    margin: 55px 0 34px 20px;
   }
 }
