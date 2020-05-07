@@ -4,7 +4,7 @@
 
 .extra__title {
   @include title-font(24px, 1);
-  padding: 23px 0 20px 0;
+  padding: 23px 0 16px 0;
   position: relative;
   margin: 0;
 
@@ -39,11 +39,16 @@
   @include base-font(16px, 1, $black-three);
   text-transform: uppercase;
   margin: 0;
-  padding-top: 9px;
+  padding-top: 13px;
 
   p {
     margin: 0;
   }
+}
+
+.extra__field,
+.extra__value {
+  @include text-font(14px, 1, $greyish-brown);
 }
 
 .extra__produts-button {

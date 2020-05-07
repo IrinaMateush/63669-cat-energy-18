@@ -1,5 +1,5 @@
 .advantages {
-  @include wrapper(435px, 100%, $white, 20px);
+  @include wrapper(430px, 100%, $white, 20px);
 }
 
 .advantages__list {
@@ -9,13 +9,12 @@
 .advantages__title {
   @include title-font();
   margin-top: 5px;
-  padding-bottom: 3px;
 }
 
 .advantages__text {
   max-width: 195px;
   padding-left: 80px;
-  margin: 0 0 20px 0;
+  margin: 0 0 21px 0;
 }
 
 .advantages__item {

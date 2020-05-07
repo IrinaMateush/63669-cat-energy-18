@@ -6,11 +6,11 @@
   @include wrapper(236px, 100%, $middle-grey, 20px);
   @include flex-col();
   text-align: center;
-  padding-top: 33px;
+  padding-top: 37px;
 }
 
 .page-footer__logo {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid $light-pink;
 
   &:hover,

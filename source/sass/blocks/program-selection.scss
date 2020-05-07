@@ -1,7 +1,6 @@
 .program-selection {
   @include wrapper(1370px, 320px, $white, 0);
 
-
   fieldset:not(.program-selection__goal) {
     border: none;
     margin: 0;
@@ -9,13 +8,12 @@
 }
 
 .program-selection__title {
-  @include wrapper(60px, 300px, $white, 0);
+  @include wrapper(0, 300px, $white, 0);
   @include title-font(24px, 1);
   position: relative;
   margin: 0;
   z-index: 0;
   max-width: 100%;
-  padding-bottom: 36px;
 
   &::after {
     @include pseudo(100%, 3px, 15px, 0, 0, 0);
@@ -40,9 +38,21 @@
 .program-selection__owner {
   box-sizing: border-box;
   min-width: 300px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  padding: 0 0 13px 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+
+  .program-selection__block {
+    margin-top: 30px;
+  }
+}
+
+.program-selection__owner-group {
+  position: relative;
+
+  .program-selection__input {
+    margin-left: 11px;
+    padding: 11px 15px;
+  }
 }
 
 .program-selection__form-group,
@@ -50,11 +60,18 @@
   @include flex-row();
   align-items: center;
   max-width: 280px;
+  margin-bottom: 14px;
 
   .program-selection__input {
     flex-grow: 1;
-    margin-left: 16px;
     border: 1px solid $very-light-pink;
+  }
+}
+
+.program-selection__form-group {
+  .program-selection__input {
+    margin-left: 14px;
+    padding: 12px 15px;
   }
 }
 
@@ -80,8 +97,6 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-bottom: 17px;
-  padding-top: 8px;
 }
 
 .program-selection__checkbox[type="checkbox"],
@@ -95,10 +110,10 @@
   &::before {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border: 1px solid $very-light-pink;
-    left: 0;
+    left: 1px;
     top: -3px;
   }
 
@@ -112,8 +127,8 @@
     width: 22px;
     height: 17px;
     background-color: $green;
-    top: 6px;
-    left: 4px;
+    top: 4px;
+    left: 5px;
     background: {
       color: $white;
       image: url("../../img/icon-tick.svg");
@@ -127,11 +142,11 @@
   &::before {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border: 1px solid $very-light-pink;
-    left: -5px;
-    top: 0;
+    left: 8px;
+    top: -7px;
     border-radius: 50%;
   }
 
@@ -144,21 +159,37 @@
     position: absolute;
     width: 12px;
     height: 12px;
-    top: 10px;
-    left: 5px;
+    left: 17px;
+    top: 2px;
     background-color: $green;
     border-radius: 50%;
   }
 }
 
 .program-selection__extra {
-  padding: 0 0 0 20px;
+  padding-left: 20px;
+
+  .program-selection__extra-block {
+    margin-top: 35px;
+  }
+}
+
+.program-selection__goal-group {
+  .program-selection__label {
+    padding-left: 53px;
+  }
+}
+
+.program-selection__extra-group {
+  .program-selection__label {
+    padding-left: 47px;
+  }
 }
 
 .program-selection__goal-group,
 .program-selection__extra-group {
   .program-selection__label {
-    padding-left: 46px;
+    margin-bottom: 25px;
 
     &:hover::before,
     &:focus::before {
@@ -177,8 +208,6 @@
 
 .program-selection__input {
   @include base-font(16px, 1.13, $greyish-brown);
-  padding: 12px 12px;
-  margin-bottom: 16px;
   text-transform: uppercase;
   outline: none;
   border: solid 1px rgba($light-pink, 0.5), solid 1px $white;
@@ -203,33 +232,43 @@
   border: none;
   width: 280px;
   padding: 10px;
-  margin: 24px 0 0 20px;
+  margin: 4px 0 0 20px;
 }
 
 .program-selection__goal {
   border: 1px solid $light-gray;
   box-sizing: border-box;
-  padding: 32px 20px;
-  margin: 0 70px 70px;
+  padding-top: 27px; //ок
+  padding-bottom: 0;
+  margin: 0 0 30px 0;
 }
 
 .program-selection__radio,
 .program-selection__checkbox {
-  padding: 0 16px 13px 0;
   width: 30px;
   height: 30px;
+}
+
+//комментарий
+
+.program-selection__comment {
+  padding: 0 0 0 20px;
+  margin-bottom: 23px;
+  box-sizing: border-box;
+  min-width: 300px;
 }
 
 .program-selection__textarea {
   @include base-font(16px, 1.13, $greyish-brown);
   box-sizing: border-box;
   padding: 12px 0 0 16px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   text-transform: uppercase;
   width: 280px;
   height: 150px;
   outline: none;
   border: solid 1px rgba($light-pink, 0.5);
+  margin-top: 35px;
 
   &:hover {
     border: solid 1px $light-pink;
@@ -239,10 +278,6 @@
   &:focus {
     border: solid 2px $greyish-brown;
   }
-}
-
-.program-selection__owner-group {
-  position: relative;
 }
 
 .program-selection__icon--mail {
@@ -255,13 +290,6 @@
   position: absolute;
   top: 14px;
   right: 13px;
-}
-
-.program-selection__comment {
-  padding: 0 0 0 20px;
-  margin-bottom: 23px;
-  box-sizing: border-box;
-  min-width: 300px;
 }
 
 @media (min-width: $tablet-width) {

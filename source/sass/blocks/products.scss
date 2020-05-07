@@ -45,8 +45,9 @@
 
 .products__description {
   @include text-font();
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $very-light-pink;
+  margin: 17px 0;
 }
 
 .products__link {
