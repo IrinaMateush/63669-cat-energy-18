@@ -86,7 +86,7 @@
 .program-selection__required {
   @include text-font(14px, 1.14, $greyish-brown);
   text-align: center;
-  margin: 19px 0 0 0;
+  margin: 22px 0 0 0;
   width: 320px;
 }
 
@@ -251,10 +251,10 @@
 }
 
 .program-selection__comment {
-  padding: 0 0 0 20px;
   margin-bottom: 23px;
   box-sizing: border-box;
   min-width: 300px;
+  padding: 0;
 
   .program-selection__title {
     margin-left: 20px;
@@ -326,8 +326,8 @@
     .program-selection__block {
       max-width: 768px;
       padding: 0 70px;
-      margin-top: 74px;
-      margin-bottom: 46px;
+      margin-top: 76px;
+      margin-bottom: 49px;
     }
   }
 
@@ -340,7 +340,7 @@
 
   .program-selection__textarea {
     @include base-font(20px, 1.5, $greyish-brown);
-    margin: 75px 0 59px 70px;
+    margin: 75px 0 61px 70px;
     padding: 12px 20px;
     width: 631px;
     height: 174px;
@@ -389,7 +389,7 @@
   .program-selection__request {
     @include base-font(20px, 1.5, $black);
     padding-left: 70px;
-    padding-bottom: 59px;
+    padding-bottom: 63px;
     width: 325px;
   }
 
@@ -408,8 +408,16 @@
 
   .program-selection__required {
     @include text-font(16px, 1, $greyish-brown);
-    margin: 35px 0 34px -8px;
+    margin: 38px 0 34px -8px;
     display: inline-block;
+  }
+
+  .program-selection__comment {
+    padding-left: 0;
+
+    .program-selection__title {
+      margin-left: 0;
+    }
   }
 
   .program-selection__title {
@@ -467,13 +475,7 @@
   }
 }
 
-.program-selection__comment {
-  padding-left: 0;
 
-  .program-selection__title {
-    margin-left: 0;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .program-selection {
@@ -493,11 +495,11 @@
   .program-selection__checkbox[type="checkbox"] {
     &::before {
       left: -2px;
-      top: 27px;
+      top: 25px;
     }
 
     &:checked::after {
-      top: 38px;
+      top: 36px;
       left: 8px;
     }
   }
