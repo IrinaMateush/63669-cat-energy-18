@@ -108,8 +108,9 @@
 
   .advantages__title {
     @include base-font(60px, 1);
-    padding-bottom: 33px;
-    margin-top: 20px;
+    padding-bottom: 3px;
+    margin-top: 17px;
+    margin-bottom: 79px;
   }
 
   .advantages__item {
@@ -123,9 +124,7 @@
     }
 
     &::after {
-      @include pseudo(0, 0, -180px, 0, 0, 100px);
-      color: $middle-grey;
-      font-size: 281px;
+      @include pseudo(0, 0, -140px, 0, 0, 115px);
       z-index: -1;
     }
 
@@ -136,24 +135,28 @@
 
   .advantages__item--healthy {
     &::after {
+      @include base-font(281px, 1, $middle-grey);
       content: "1";
     }
   }
 
   .advantages__item--easy {
     &::after {
+      @include base-font(281px, 1, $middle-grey);
       content: "2";
     }
   }
 
   .advantages__item--cheap {
     &::after {
+      @include base-font(281px, 1, $middle-grey);
       content: "3";
     }
   }
 
   .advantages__item--fast {
     &::after {
+      @include base-font(281px, 1, $middle-grey);
       content: "4";
     }
   }

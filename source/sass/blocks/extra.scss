@@ -22,12 +22,12 @@
 .extra__produts-item {
   @include wrapper(128px, 280px, $white, 0);
   @include base-font(14px, 1, $greyish-brown);
-  border-bottom: 1px solid $very-light-pink;
+  border-bottom: 1px solid $light-pink;
   padding-bottom: 17px;
   margin: 0 auto;
 
   &:first-child {
-    border-top: 1px solid $very-light-pink;
+    border-top: 1px solid $light-pink;
   }
 
   p {
@@ -66,8 +66,8 @@
     @include flex-row ();
     align-items: center;
     padding: 12px 37px 0;
-    border-left: 1px solid $very-light-pink;
-    border-right: 1px solid $very-light-pink;
+    border-left: 1px solid $light-pink;
+    border-right: 1px solid $light-pink;
 
     p {
       display: inline-block;

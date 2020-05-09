@@ -49,10 +49,10 @@
   text-align: center;
   height: 40px;
   width: 126px;
-  padding: 13px 0 43px 0;
-  margin: 25px 0;
+  padding: 10px 0 43px 0;
+  margin: 27px 0;
   border-radius: 3px;
-  border: 1px solid $very-light-pink;
+  border: 1px solid $light-pink;
   position: relative;
 
   span {
@@ -91,7 +91,7 @@
   width: 83px;
   height: 12px;
   border-radius: 6px;
-  border: 1px solid $very-light-pink;
+  border: 1px solid $light-pink;
   box-shadow: 0 2px 5px 0 rgba($black, 0.15);
   background-color: $white;
   position: relative;
@@ -130,7 +130,7 @@
   .example__text {
     @include wrapper(64px, 100%, $white, 30px);
     @include base-font(16px, 1.5, $greyish-brown, $base-font);
-    padding: 60px 30px 22px;
+    padding: 40px 30px 28px;
   }
 
   .example__slider {
@@ -148,7 +148,7 @@
   .example__title {
     @include wrapper(61px, 100%, $white, 30px);
     @include base-font(60px, 1);
-    padding: 0 0 5px 30px;
+    padding-top: 0;
   }
 
   .example__indicators {
@@ -163,7 +163,7 @@
     max-width: 175px;
     text-align: right;
     padding-right: 31px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .example__weight {
@@ -212,7 +212,7 @@
       image: url("../../img/before-tablet@1x.png");
       repeat: no-repeat;
       size: cover;
-      position: -20px 8px;
+      position: -18px 8px;
     }
 
     @media (min-resolution: $retina-dppx) {
@@ -221,7 +221,7 @@
       background: {
         image: url("../../img/before-tablet@2x.png");
         repeat: no-repeat;
-        position: -20px 8px;
+        position: -18px 8px;
         size: cover;
       }
     }
@@ -234,7 +234,7 @@
     background: {
       image: url("../../img/after-tablet@1x.png");
       repeat: no-repeat;
-      position: -346px 5px;
+      position: -342px 11px;
       size: cover;
     }
 
@@ -244,7 +244,7 @@
       background: {
         image: url("../../img/after-tablet@2x.png");
         repeat: no-repeat;
-        position: -346px 5px;
+        position: -342px 11px;
         size: cover;
       }
     }
@@ -273,7 +273,7 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 1px solid $very-light-pink;
+    border: 1px solid $light-pink;
     background-color: $white;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     position: relative;
@@ -282,7 +282,7 @@
     &::before {
       @include pseudo(428px, 6px, 12px, 0, 0, -197px);
       border-radius: 2.5px;
-      background-color: $light-pink;
+      background-color: $scale-gray;
       z-index: -1;
     }
   }
