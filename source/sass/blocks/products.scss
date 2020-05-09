@@ -9,7 +9,7 @@
 
 .products__item {
   @include wrapper(266px, 100%, $middle-grey, 20px);
-  margin-top: 20px;
+  margin-top: 22px;
   position: relative;
 
   &::before {
@@ -38,7 +38,7 @@
 .products__title {
   @include base-font(24px, 1.54);
   text-transform: uppercase;
-  padding-top: 8px;
+  padding-top: 5px;
   padding-left: 72px;
   margin-bottom: 29px;
 }
@@ -47,7 +47,7 @@
   @include text-font();
   padding-bottom: 22px;
   border-bottom: 1px solid $very-light-pink;
-  margin: 17px 0;
+  margin: 20px 0;
 }
 
 .products__link {

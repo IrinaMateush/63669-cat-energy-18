@@ -1,5 +1,5 @@
 .example {
-  @include wrapper(815px, 100%, $middle-grey, 20px);
+  @include wrapper(819px, 100%, $middle-grey, 20px);
 }
 
 .example__description {
@@ -9,7 +9,7 @@
 .example__title {
   @include title-font();
   @include wrapper(10px, 100%, $middle-grey, 0);
-  padding: 15px 0 23px 0;
+  padding: 17px 0 23px 0;
 }
 
 .example__text {
