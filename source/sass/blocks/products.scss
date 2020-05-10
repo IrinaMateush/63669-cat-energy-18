@@ -132,6 +132,7 @@
   .products__item {
     @include wrapper(372px, 570px, $middle-grey, 47px);
     margin: 0;
+    padding-left: 52px;
 
     &::before {
       @include pseudo(100px, 100px, 47px, 0, 0, 52px);
@@ -149,19 +150,18 @@
   }
 
   .products__title {
-    padding-left: 165px;
-    margin-top: 66px;
+    padding-left: 162px;
+    margin-top: 68px;
   }
 
   .products__description {
-    padding-bottom: 36px;
-    padding-top: 45px;
-    max-width: 461px;
+    max-width: 468px;
+    padding: 48px 0 33px 0;
   }
 
   .products__link {
     &::after {
-      @include pseudo(25px, 12px, 7px, 0, 0, 130px);
+      @include pseudo(25px, 12px, 8px, 0, 0, 128px);
     }
   }
 }

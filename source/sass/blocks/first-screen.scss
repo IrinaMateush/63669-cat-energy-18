@@ -100,7 +100,7 @@
   }
 
   .first-screen__cat {
-    @include wrapper(696px, 50%, $green, 0);
+    @include wrapper(699ыpx, 50%, $green, 0);
     max-height: 696px;
     margin-top: -122px;
     position: relative;
@@ -120,17 +120,17 @@
   }
 
   .first-screen__title {
-    padding-top: 100px;
-    padding-left: 193px;
+    padding-top: 105px;
+    padding-left: 190px;
   }
 
   .first-screen__slogan {
     padding-bottom: 33px;
-    padding-left: 193px;
+    padding-left: 190px;
   }
 
   .first-screen__button {
-    margin-left: 193px;
+    margin-left: 190px;
   }
 
   .first-screen__wrapper {
@@ -141,6 +141,6 @@
     width: 552px;
     height: 499px;
     top: -60px;
-    left: 220px;
+    left: 230px;
   }
 }

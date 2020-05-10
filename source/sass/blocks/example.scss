@@ -130,7 +130,7 @@
   .example__text {
     @include wrapper(64px, 100%, $white, 30px);
     @include base-font(16px, 1.5, $greyish-brown, $base-font);
-    padding: 40px 30px 28px;
+    padding: 40px 30px 20px;
   }
 
   .example__slider {
@@ -154,7 +154,7 @@
   .example__indicators {
     max-width: 367px;
     padding-left: 30px;
-    margin-bottom: 235px;
+    margin-bottom: 225px;
   }
 
   .example__cost {
@@ -163,7 +163,7 @@
     max-width: 175px;
     text-align: right;
     padding-right: 31px;
-    margin-top: 30px;
+    margin-top: 37px;
   }
 
   .example__weight {
@@ -181,6 +181,7 @@
     @include base-font(30px, 1.23, $black);
     width: 162px;
     padding: 13px 0 55px 0;
+    margin: 34px 0;
 
     span {
       @include text-font(14px, 1);
@@ -205,23 +206,23 @@
   }
 
   .example__big-cat {
-    width: 320px;
-    height: 510px;
+    width: 315px;
+    height: 515px;
     display: inline-block;
     background: {
       image: url("../../img/before-tablet@1x.png");
       repeat: no-repeat;
       size: cover;
-      position: -18px 8px;
+      position: -19px 12px;
     }
 
     @media (min-resolution: $retina-dppx) {
-      width: 320px;
-      height: 510px;
+      width: 315px;
+      height: 515px;
       background: {
         image: url("../../img/before-tablet@2x.png");
         repeat: no-repeat;
-        position: -18px 8px;
+        position: -19px 12px;
         size: cover;
       }
     }
@@ -234,7 +235,7 @@
     background: {
       image: url("../../img/after-tablet@1x.png");
       repeat: no-repeat;
-      position: -342px 11px;
+      position: -340px 18px;
       size: cover;
     }
 
@@ -244,7 +245,7 @@
       background: {
         image: url("../../img/after-tablet@2x.png");
         repeat: no-repeat;
-        position: -342px 11px;
+        position: -340px 18px;
         size: cover;
       }
     }
@@ -252,7 +253,7 @@
 
   .example__scale {
     @include base-font(20px, 1);
-    padding-top: 359px;
+    padding-top: 362px;
 
     span {
       vertical-align: top;
@@ -324,19 +325,55 @@
   }
 
   .example__text {
-    @include wrapper(88px, 430px, $middle-grey, 0);
+    @include wrapper(88px, 435px, $middle-grey, 0);
     @include base-font(16px, 1.5, $greyish-brown, $base-font);
     margin-left: 110px;
-    padding: 80px 0 36px 0;
+    padding: 70px 0 36px 0;
   }
 
   .example__cat {
     left: -56px;
   }
 
+  .example__big-cat {
+    width: 335px;
+    height: 518px;
+    background: {
+      image: url("../../img/before-desktop@1x.png");
+      position: -30px -3px;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      width: 335px;
+      height: 518px;
+      background: {
+        image: url("../../img/before-desktop@2x.png");
+        position: -30px -3px;
+      }
+    }
+  }
+
+  .example__small-cat {
+    width: 298px;
+    height: 520px;
+    background: {
+      image: url("../../img/after-desktop@1x.png");
+      position: -365px -1px;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      width: 298px;
+      height: 520px;
+      background: {
+        image: url("../../img/after-desktop@2x.png");
+        position: -365px -1px;
+      }
+    }
+  }
+
   .example__title {
     @include wrapper(60px, 100%, $white, 110px);
-    padding-bottom: 66px;
+    padding-bottom: 75px;
   }
 
   .example__indicators {
@@ -359,7 +396,7 @@
   }
 
   .example__money {
-    padding-left: 64px;
+    padding-left: 60px;
   }
 
   .example__scale {
@@ -369,7 +406,7 @@
   }
 
   .example__scale-loader {
-    margin: -4px 217px 0 217px;
+    margin: -8px 220px 0 217px;
 
     &::before {
       @include pseudo(428px, 6px, 12px, 0, 0, -193px);
