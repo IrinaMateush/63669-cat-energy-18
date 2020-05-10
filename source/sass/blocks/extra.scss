@@ -60,39 +60,47 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extra {
+    padding: 0;
+  }
+
   .extra__produts-item {
     @include wrapper(140px, 708px, $white, 0);
     @include base-font(16px, 1.25, $greyish-brown);
-    @include flex-row ();
-    align-items: center;
-    padding: 12px 37px 0;
+    @include flex-row();
+    align-content: space-around;
     border-left: 1px solid $light-pink;
     border-right: 1px solid $light-pink;
 
     p {
       display: inline-block;
-      width: 40%;
+      width: 50%;
       text-align: right;
       margin: 0;
-      padding-top: 5px;
+      padding-top: 15px;
+      padding-right: 37spx;
     }
+  }
 
-    .extra__field {
-      padding-right: 72px;
-    }
+  .extra__field,
+  .extra__value {
+    @include text-font(16px, 1, $greyish-brown);
+  }
+
+  .extra__value {
+    padding-right: 37px;
+    padding-left: 48px;
   }
 
   .extra__produts-title {
     @include base-font(20px, 1, $black-three);
     display: inline-block;
-    width: 58%;
-    padding-bottom: 0;
-    padding-top: 0;
+    width: 30%;
+    padding: 14px 0 0 38px;
   }
 
   .extra__title {
     @include title-font(36px, 1);
-    width: 100%;
     padding: 0 0 63px 30px;
     margin: 0;
     margin-top: -5px;
@@ -105,13 +113,13 @@
 
     span {
       background-color: $white;
-      padding: 0 20px;
+      padding: 0 35px;
     }
   }
 
   .extra__produts-button {
     width: 620px;
-    margin-bottom: 19px;
+    margin: 0 auto;
   }
 }
 

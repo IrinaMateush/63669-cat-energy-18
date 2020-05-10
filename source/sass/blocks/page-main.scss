@@ -29,7 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    @include wrapper(61px, 1440px, $white, 113px);
+    @include wrapper(61px, 1440px, $white, 110px);
     padding-top: 70px;
     margin: 0 auto;
     padding-bottom: 118px;

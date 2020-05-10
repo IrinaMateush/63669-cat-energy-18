@@ -40,9 +40,8 @@
 
 @media (min-width: $tablet-width) {
   .gift {
-    @include wrapper(200px, 100%, $green, 20px);
-    margin-top: 69px;
-    margin-bottom: 277px;
+    @include wrapper(200px, 708px, $green, 0);
+    margin: 65px auto 270px auto;
     background: {
       image: url("../../img/gift-photo-tablet@1x.jpg");
       height: 200px;
@@ -54,7 +53,7 @@
   }
 
   .gift__text {
-    padding: 70px 0 0 305px;
+    padding: 72px 0 0 305px;
     max-width: 170px;
     text-align: left;
 
