@@ -80,12 +80,12 @@
   }
 
   .gift__text {
-    padding: 185px 0 0 0;
-    max-width: 160px;
+    padding: 187px 0 0 0;
+    max-width: 180px;
     text-align: center;
 
     &::after {
-      @include pseudo(61px, 61px, 64px, 0, 0, 45px);
+      @include pseudo(61px, 61px, 64px, 0, 0, 55px);
     }
   }
 }

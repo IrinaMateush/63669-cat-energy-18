@@ -108,13 +108,13 @@
 
 @media (min-width: $desktop-width) {
   .catalog-produts__list {
-    @include wrapper(1130px, 1220px, $white, 0);
-
+    @include wrapper(1005px, 1220px, $white, 0);
+    margin-top: 46px;
+    margin-bottom: 82px;
   }
 
   .catalog-produts__item {
     @include wrapper(431px, 245px, $middle-grey, 0);
-    margin: 45px auto;
 
       &:nth-child(1n) {
         margin-left: 0;
@@ -126,16 +126,20 @@
   }
 
   .catalog-produts__foto--small {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   .catalog-produts__foto--big {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .catalog-produts__property {
     margin: 20px auto;
     width: 169px;
+
+    p {
+      padding-bottom: 5px;
+    }
   }
 
   .catalog-produts__button {
