@@ -28,7 +28,7 @@
   position: relative;
 
   &::after {
-    @include pseudo(61px, 56px, 65px, 0, 0, 55px);
+    @include pseudo(61px, 59px, 65px, 0, 0, 54px);
     background: {
       image: url("../../img/icon-gift.svg");
       repeat: no-repeat;

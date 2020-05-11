@@ -28,8 +28,8 @@
 .show-more__description {
   @include base-font(12px, 1.33, $greyish-brown, $base-font);
   margin: 0 auto;
-  padding-top: 3px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 16px;
 }
 
 .show-more__button {
@@ -96,11 +96,11 @@
   }
 
   .show-more__action {
-    padding-top: 160px;
-    padding-bottom: 0;
+    padding-top: 162px;
+    padding-bottom: 12px;
   }
 
   .show-more__description {
-    padding-bottom: 75px;
+    padding-bottom: 65px;
   }
 }

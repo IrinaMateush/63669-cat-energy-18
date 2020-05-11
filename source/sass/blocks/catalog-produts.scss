@@ -87,9 +87,7 @@
 
   .catalog-produts__foto--small {
     width: 100%;
-    height: 172px;
     padding: 0;
-    width: 100%;
     height: 174px;
     margin: -47px auto 24px auto;
   }
@@ -116,13 +114,13 @@
   .catalog-produts__item {
     @include wrapper(431px, 245px, $middle-grey, 0);
 
-      &:nth-child(1n) {
-        margin-left: 0;
-      }
+    &:nth-child(1n) {
+      margin-left: 0;
+    }
 
-      &:nth-child(4n + 4){
-        margin-right: 0;
-      }
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
   }
 
   .catalog-produts__foto--small {
